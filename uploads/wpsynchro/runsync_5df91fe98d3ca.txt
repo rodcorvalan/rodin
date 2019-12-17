@@ -1,0 +1,1057 @@
+[2019-12-17 18:35:22.422834] [INFO] Running sync controller loop - With allotted time: 26.54517698288 seconds
+[2019-12-17 18:35:22.429572] [INFO] Initating with remote and local host with remaining time:26.538437843323
+[2019-12-17 18:35:22.441479] [DEBUG] Calling initate remote service with url: http://localhost/rodin/wp-json/wpsynchro/v1/initiate/?type=local&frontend_ip=::1
+[2019-12-17 18:35:22.827715] [DEBUG] Got initiate token: 6cc52806c5083a6a41fff73dda52b9af07306555697d3412e534f85e4144c9ed
+[2019-12-17 18:35:22.832959] [DEBUG] Calling initate remote service with url: http://rodin.armix.com.ar/wp-json/wpsynchro/v1/initiate/?type=push
+[2019-12-17 18:35:41.607550] [DEBUG] Got initiate token: 14d35d8906007f1f60cdcec41e25a360405fef5b3583a0bfcb64ee8566ff6924
+[2019-12-17 18:35:41.619110] [INFO] Initation completed on: 19.18954205513 seconds
+[2019-12-17 18:35:41.631429] [INFO] Ending sync controller loop - with remaining time: 7.3365988731384
+[2019-12-17 18:35:42.018709] [INFO] Running sync controller loop - With allotted time: 26.640313863754 seconds
+[2019-12-17 18:35:42.030927] [INFO] Getting masterdata from source and target with remaining time:26.628087997437
+[2019-12-17 18:35:42.039574] [DEBUG] Calling masterdata service on: http://localhost/rodin/wp-json/wpsynchro/v1/masterdata/?type[]=dbdetails&type[]=filedetails&transport=1 with intent to user as 'from'
+[2019-12-17 18:35:42.612379] [DEBUG] Calling masterdata service on: http://rodin.armix.com.ar/wp-json/wpsynchro/v1/masterdata/?type[]=dbdetails&type[]=filedetails&transport=1 with intent to user as 'to'
+[2019-12-17 18:35:43.658795] [INFO] Completed masterdata on: 1.627876996994 seconds
+[2019-12-17 18:35:43.693055] [INFO] Ending sync controller loop - with remaining time: 24.965960025787
+[2019-12-17 18:35:44.171638] [INFO] Running sync controller loop - With allotted time: 26.554373979568 seconds
+[2019-12-17 18:35:44.193638] [INFO] Ending sync controller loop - with remaining time: 26.532372951508
+[2019-12-17 18:35:44.631282] [INFO] Running sync controller loop - With allotted time: 26.577729225159 seconds
+[2019-12-17 18:35:44.640439] [INFO] Starting database synchronization loop with remaining time: 26.568572998047
+[2019-12-17 18:35:44.646243] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => http://rodin.armix.com.ar
+            [from] => http://localhost/rodin
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => http:\/\/rodin.armix.com.ar
+            [from] => http:\/\/localhost\/rodin
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => /home4/k1e2y4h6/public_html/subdomains3/rodin
+            [from] => C:/xampp7/htdocs/rodin
+        )
+
+)
+
+[2019-12-17 18:35:52.247762] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:35:52.257572] [INFO] New table is started: wp_commentmeta and setting new default rows per sync: 500
+[2019-12-17 18:35:52.269100] [DEBUG] Getting data from local DB with SQL query: select * from `wp_commentmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2019-12-17 18:35:52.276470] [INFO] Marking table: wp_commentmeta as completed
+[2019-12-17 18:35:52.282966] [DEBUG] Lastrun in : 0.017496824264526 seconds - rows throttle: 525 and remaining time: 18.9260430336
+[2019-12-17 18:35:52.290882] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 0 / 31.358
+[2019-12-17 18:35:52.313666] [INFO] New table is started: wp_comments and setting new default rows per sync: 183
+[2019-12-17 18:35:52.322215] [DEBUG] Getting data from local DB with SQL query: select * from `wp_comments` where `comment_ID` > 0 order by `comment_ID`  limit 183
+[2019-12-17 18:35:52.328513] [INFO] Marking table: wp_comments as completed
+[2019-12-17 18:35:53.270607] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:35:53.280367] [DEBUG] Lastrun in : 0.95976209640503 seconds - rows throttle: 193 and remaining time: 17.928644180298
+[2019-12-17 18:35:53.288747] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 3 / 31.358
+[2019-12-17 18:35:53.314860] [INFO] New table is started: wp_db7_forms and setting new default rows per sync: 122
+[2019-12-17 18:35:53.324480] [DEBUG] Getting data from local DB with SQL query: select * from `wp_db7_forms` where `form_id` > 0 order by `form_id`  limit 122
+[2019-12-17 18:35:53.331694] [INFO] Marking table: wp_db7_forms as completed
+[2019-12-17 18:35:54.181674] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:35:54.203598] [DEBUG] Lastrun in : 0.88063907623291 seconds - rows throttle: 129 and remaining time: 17.005415201187
+[2019-12-17 18:35:54.211165] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 5 / 31.358
+[2019-12-17 18:35:54.240139] [INFO] New table is started: wp_emtr_email and setting new default rows per sync: 96
+[2019-12-17 18:35:54.252034] [DEBUG] Getting data from local DB with SQL query: select * from `wp_emtr_email` where `email_id` > 0 order by `email_id`  limit 96
+[2019-12-17 18:35:54.261384] [INFO] Marking table: wp_emtr_email as completed
+[2019-12-17 18:35:55.518257] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:35:55.526293] [DEBUG] Lastrun in : 1.2794990539551 seconds - rows throttle: 101 and remaining time: 15.682721138
+[2019-12-17 18:35:55.538683] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 24 / 31.358
+[2019-12-17 18:35:55.571221] [INFO] New table is started: wp_emtr_track_email_link_click_log and setting new default rows per sync: 500
+[2019-12-17 18:35:55.581249] [DEBUG] Getting data from local DB with SQL query: select * from `wp_emtr_track_email_link_click_log` where `trklinkclick_id` > 0 order by `trklinkclick_id`  limit 500
+[2019-12-17 18:35:55.590368] [INFO] Marking table: wp_emtr_track_email_link_click_log as completed
+[2019-12-17 18:35:55.599255] [DEBUG] Lastrun in : 0.019106864929199 seconds - rows throttle: 525 and remaining time: 15.609757184982
+[2019-12-17 18:35:55.606592] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 24 / 31.358
+[2019-12-17 18:35:55.629662] [INFO] New table is started: wp_emtr_track_email_link_master and setting new default rows per sync: 500
+[2019-12-17 18:35:55.642512] [DEBUG] Getting data from local DB with SQL query: select * from `wp_emtr_track_email_link_master` where `trklink_id` > 0 order by `trklink_id`  limit 500
+[2019-12-17 18:35:55.656482] [INFO] Marking table: wp_emtr_track_email_link_master as completed
+[2019-12-17 18:35:56.655914] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:35:56.678497] [DEBUG] Lastrun in : 1.0373342037201 seconds - rows throttle: 525 and remaining time: 14.530522108078
+[2019-12-17 18:35:56.695900] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 97 / 31.358
+[2019-12-17 18:35:56.725788] [INFO] New table is started: wp_emtr_track_email_open_log and setting new default rows per sync: 500
+[2019-12-17 18:35:56.733674] [DEBUG] Getting data from local DB with SQL query: select * from `wp_emtr_track_email_open_log` where `trkemail_id` > 0 order by `trkemail_id`  limit 500
+[2019-12-17 18:35:56.740697] [INFO] Marking table: wp_emtr_track_email_open_log as completed
+[2019-12-17 18:35:56.749180] [DEBUG] Lastrun in : 0.016710042953491 seconds - rows throttle: 525 and remaining time: 14.4598300457
+[2019-12-17 18:35:56.756965] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 97 / 31.358
+[2019-12-17 18:35:56.777186] [INFO] New table is started: wp_links and setting new default rows per sync: 500
+[2019-12-17 18:35:56.785205] [DEBUG] Getting data from local DB with SQL query: select * from `wp_links` where `link_id` > 0 order by `link_id`  limit 500
+[2019-12-17 18:35:56.791796] [INFO] Marking table: wp_links as completed
+[2019-12-17 18:35:56.798023] [DEBUG] Lastrun in : 0.014124870300293 seconds - rows throttle: 525 and remaining time: 14.410988092422
+[2019-12-17 18:35:56.805185] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 97 / 31.358
+[2019-12-17 18:35:56.828014] [INFO] New table is started: wp_options and setting new default rows per sync: 178
+[2019-12-17 18:35:56.840935] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 0 order by `option_id`  limit 178
+[2019-12-17 18:35:57.906910] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:35:57.917714] [DEBUG] Lastrun in : 1.0780370235443 seconds - rows throttle: 187 and remaining time: 13.291298151016
+[2019-12-17 18:35:57.924483] [INFO] Database progress update: Total data: 0,0MB / 10,1MB - Total rows: 275 / 31.358
+[2019-12-17 18:35:57.963646] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 228 order by `option_id`  limit 187
+[2019-12-17 18:36:00.423172] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:02.848556] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:02.858567] [DEBUG] Lastrun in : 4.9145128726959 seconds - rows throttle: 197 and remaining time: 8.3504750728607
+[2019-12-17 18:36:02.865242] [INFO] Database progress update: Total data: 0,1MB / 10,1MB - Total rows: 462 / 31.358
+[2019-12-17 18:36:02.902309] [DEBUG] Getting data from local DB with SQL query: select * from `wp_options` where `option_id` > 3110 order by `option_id`  limit 197
+[2019-12-17 18:36:02.909182] [INFO] Marking table: wp_options as completed
+[2019-12-17 18:36:04.509879] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:04.516442] [DEBUG] Lastrun in : 1.6228330135345 seconds - rows throttle: 207 and remaining time: 6.6925702095032
+[2019-12-17 18:36:04.523123] [INFO] Database progress update: Total data: 0,1MB / 10,1MB - Total rows: 483 / 31.358
+[2019-12-17 18:36:04.544017] [INFO] New table is started: wp_postmeta and setting new default rows per sync: 500
+[2019-12-17 18:36:04.557915] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2019-12-17 18:36:05.628464] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:05.639014] [DEBUG] Lastrun in : 1.0881879329681 seconds - rows throttle: 525 and remaining time: 5.5699970722198
+[2019-12-17 18:36:05.645742] [INFO] Database progress update: Total data: 0,3MB / 10,1MB - Total rows: 983 / 31.358
+[2019-12-17 18:36:05.680887] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 877 order by `meta_id`  limit 525
+[2019-12-17 18:36:06.661595] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:06.670975] [DEBUG] Lastrun in : 0.99374914169312 seconds - rows throttle: 552 and remaining time: 4.5380380153656
+[2019-12-17 18:36:06.681991] [INFO] Database progress update: Total data: 0,4MB / 10,1MB - Total rows: 1.508 / 31.358
+[2019-12-17 18:36:06.715060] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 1433 order by `meta_id`  limit 552
+[2019-12-17 18:36:07.801173] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:07.818196] [DEBUG] Lastrun in : 1.1074318885803 seconds - rows throttle: 580 and remaining time: 3.3908200263977
+[2019-12-17 18:36:07.827970] [INFO] Database progress update: Total data: 0,6MB / 10,1MB - Total rows: 2.060 / 31.358
+[2019-12-17 18:36:07.859072] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 2037 order by `meta_id`  limit 580
+[2019-12-17 18:36:12.258997] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:12.276874] [DEBUG] Lastrun in : 4.4198229312897 seconds - rows throttle: 609 and remaining time: 0
+[2019-12-17 18:36:12.286791] [INFO] Database progress update: Total data: 0,8MB / 10,1MB - Total rows: 2.640 / 31.358
+[2019-12-17 18:36:12.321382] [INFO] Ending database synchronization loop with remaining time: 0 seconds
+[2019-12-17 18:36:12.350409] [INFO] Ending sync controller loop - with remaining time: 0
+[2019-12-17 18:36:12.788006] [INFO] Running sync controller loop - With allotted time: 26.587003946304 seconds
+[2019-12-17 18:36:12.796026] [INFO] Starting database synchronization loop with remaining time: 26.578984975815
+[2019-12-17 18:36:12.802660] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => http://rodin.armix.com.ar
+            [from] => http://localhost/rodin
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => http:\/\/rodin.armix.com.ar
+            [from] => http:\/\/localhost\/rodin
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => /home4/k1e2y4h6/public_html/subdomains3/rodin
+            [from] => C:/xampp7/htdocs/rodin
+        )
+
+)
+
+[2019-12-17 18:36:12.810515] [DEBUG] Getting data from local DB with SQL query: select * from `wp_postmeta` where `meta_id` > 2617 order by `meta_id`  limit 609
+[2019-12-17 18:36:12.817021] [INFO] Marking table: wp_postmeta as completed
+[2019-12-17 18:36:13.818992] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:13.827686] [DEBUG] Lastrun in : 1.0186970233917 seconds - rows throttle: 640 and remaining time: 25.547326087952
+[2019-12-17 18:36:13.840267] [INFO] Database progress update: Total data: 0,9MB / 10,1MB - Total rows: 3.038 / 31.358
+[2019-12-17 18:36:13.873747] [INFO] New table is started: wp_posts and setting new default rows per sync: 500
+[2019-12-17 18:36:13.886415] [DEBUG] Getting data from local DB with SQL query: select * from `wp_posts` where `ID` > 0 order by `ID`  limit 500
+[2019-12-17 18:36:13.893044] [INFO] Marking table: wp_posts as completed
+[2019-12-17 18:36:15.192484] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:15.207196] [DEBUG] Lastrun in : 1.3269929885864 seconds - rows throttle: 525 and remaining time: 24.167824029922
+[2019-12-17 18:36:15.219674] [INFO] Database progress update: Total data: 1,0MB / 10,1MB - Total rows: 3.249 / 31.358
+[2019-12-17 18:36:15.245836] [INFO] New table is started: wp_term_relationships and setting new default rows per sync: 500
+[2019-12-17 18:36:15.254343] [DEBUG] Getting data from local DB with SQL query: select * from `wp_term_relationships` where `object_id` > 0 order by `object_id`  limit 500
+[2019-12-17 18:36:15.261022] [INFO] Marking table: wp_term_relationships as completed
+[2019-12-17 18:36:16.082101] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:16.096484] [DEBUG] Lastrun in : 0.8435640335083 seconds - rows throttle: 525 and remaining time: 23.278529882431
+[2019-12-17 18:36:16.107610] [INFO] Database progress update: Total data: 1,0MB / 10,1MB - Total rows: 3.323 / 31.358
+[2019-12-17 18:36:16.128991] [INFO] New table is started: wp_term_taxonomy and setting new default rows per sync: 500
+[2019-12-17 18:36:16.137399] [DEBUG] Getting data from local DB with SQL query: select * from `wp_term_taxonomy` where `term_taxonomy_id` > 0 order by `term_taxonomy_id`  limit 500
+[2019-12-17 18:36:16.143962] [INFO] Marking table: wp_term_taxonomy as completed
+[2019-12-17 18:36:18.038295] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:18.046020] [DEBUG] Lastrun in : 1.9101691246033 seconds - rows throttle: 525 and remaining time: 21.328989028931
+[2019-12-17 18:36:18.053818] [INFO] Database progress update: Total data: 1,0MB / 10,1MB - Total rows: 3.364 / 31.358
+[2019-12-17 18:36:18.073822] [INFO] New table is started: wp_termmeta and setting new default rows per sync: 500
+[2019-12-17 18:36:18.082094] [DEBUG] Getting data from local DB with SQL query: select * from `wp_termmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2019-12-17 18:36:18.089841] [INFO] Marking table: wp_termmeta as completed
+[2019-12-17 18:36:19.115759] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:19.128640] [DEBUG] Lastrun in : 1.0481588840485 seconds - rows throttle: 525 and remaining time: 20.24637389183
+[2019-12-17 18:36:19.139293] [INFO] Database progress update: Total data: 1,0MB / 10,1MB - Total rows: 3.433 / 31.358
+[2019-12-17 18:36:19.159273] [INFO] New table is started: wp_terms and setting new default rows per sync: 500
+[2019-12-17 18:36:19.167589] [DEBUG] Getting data from local DB with SQL query: select * from `wp_terms` where `term_id` > 0 order by `term_id`  limit 500
+[2019-12-17 18:36:19.174084] [INFO] Marking table: wp_terms as completed
+[2019-12-17 18:36:20.169429] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:20.182997] [DEBUG] Lastrun in : 1.0169250965118 seconds - rows throttle: 525 and remaining time: 19.192018032074
+[2019-12-17 18:36:20.192568] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.474 / 31.358
+[2019-12-17 18:36:20.212796] [INFO] New table is started: wp_usermeta and setting new default rows per sync: 500
+[2019-12-17 18:36:20.219804] [DEBUG] Getting data from local DB with SQL query: select * from `wp_usermeta` where `umeta_id` > 0 order by `umeta_id`  limit 500
+[2019-12-17 18:36:20.226171] [INFO] Marking table: wp_usermeta as completed
+[2019-12-17 18:36:21.173600] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:21.182728] [DEBUG] Lastrun in : 0.96349811553955 seconds - rows throttle: 525 and remaining time: 18.192281007767
+[2019-12-17 18:36:21.188981] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.506 / 31.358
+[2019-12-17 18:36:21.208663] [INFO] New table is started: wp_users and setting new default rows per sync: 500
+[2019-12-17 18:36:21.215540] [DEBUG] Getting data from local DB with SQL query: select * from `wp_users` where `ID` > 0 order by `ID`  limit 500
+[2019-12-17 18:36:21.221942] [INFO] Marking table: wp_users as completed
+[2019-12-17 18:36:22.213482] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:22.222918] [DEBUG] Lastrun in : 1.0078229904175 seconds - rows throttle: 525 and remaining time: 17.152091026306
+[2019-12-17 18:36:22.229183] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.507 / 31.358
+[2019-12-17 18:36:22.250415] [INFO] New table is started: wp_wc_download_log and setting new default rows per sync: 500
+[2019-12-17 18:36:22.258905] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wc_download_log` where `download_log_id` > 0 order by `download_log_id`  limit 500
+[2019-12-17 18:36:22.266617] [INFO] Marking table: wp_wc_download_log as completed
+[2019-12-17 18:36:22.273992] [DEBUG] Lastrun in : 0.016517877578735 seconds - rows throttle: 525 and remaining time: 17.101016998291
+[2019-12-17 18:36:22.280357] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.507 / 31.358
+[2019-12-17 18:36:22.300026] [INFO] New table is started: wp_wc_product_meta_lookup and setting new default rows per sync: 500
+[2019-12-17 18:36:22.307814] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wc_product_meta_lookup` where `product_id` > 0 order by `product_id`  limit 500
+[2019-12-17 18:36:22.314652] [INFO] Marking table: wp_wc_product_meta_lookup as completed
+[2019-12-17 18:36:23.146090] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:23.155222] [DEBUG] Lastrun in : 0.84892606735229 seconds - rows throttle: 525 and remaining time: 16.219786882401
+[2019-12-17 18:36:23.161816] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.536 / 31.358
+[2019-12-17 18:36:23.183084] [INFO] New table is started: wp_wc_tax_rate_classes and setting new default rows per sync: 122
+[2019-12-17 18:36:23.190775] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wc_tax_rate_classes` where `tax_rate_class_id` > 0 order by `tax_rate_class_id`  limit 122
+[2019-12-17 18:36:23.197385] [INFO] Marking table: wp_wc_tax_rate_classes as completed
+[2019-12-17 18:36:24.015589] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:24.022303] [DEBUG] Lastrun in : 0.8326358795166 seconds - rows throttle: 129 and remaining time: 15.352705955505
+[2019-12-17 18:36:24.028634] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.538 / 31.358
+[2019-12-17 18:36:24.046928] [INFO] New table is started: wp_wc_webhooks and setting new default rows per sync: 500
+[2019-12-17 18:36:24.054959] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wc_webhooks` where `webhook_id` > 0 order by `webhook_id`  limit 500
+[2019-12-17 18:36:24.061350] [INFO] Marking table: wp_wc_webhooks as completed
+[2019-12-17 18:36:24.067584] [DEBUG] Lastrun in : 0.014234066009521 seconds - rows throttle: 525 and remaining time: 15.307426929474
+[2019-12-17 18:36:24.073923] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.538 / 31.358
+[2019-12-17 18:36:24.094058] [INFO] New table is started: wp_wfblockediplog and setting new default rows per sync: 20
+[2019-12-17 18:36:24.101887] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfblockediplog` limit 0,20
+[2019-12-17 18:36:24.108026] [INFO] Marking table: wp_wfblockediplog as completed
+[2019-12-17 18:36:24.114585] [DEBUG] Lastrun in : 0.013958930969238 seconds - rows throttle: 21 and remaining time: 15.260423898697
+[2019-12-17 18:36:24.121296] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.538 / 31.358
+[2019-12-17 18:36:24.141179] [INFO] New table is started: wp_wfblocks7 and setting new default rows per sync: 20
+[2019-12-17 18:36:24.150037] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfblocks7` where `id` > 0 order by `id`  limit 20
+[2019-12-17 18:36:24.156858] [INFO] Marking table: wp_wfblocks7 as completed
+[2019-12-17 18:36:24.163224] [DEBUG] Lastrun in : 0.013592004776001 seconds - rows throttle: 21 and remaining time: 15.211785078049
+[2019-12-17 18:36:24.169289] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.538 / 31.358
+[2019-12-17 18:36:24.188350] [INFO] New table is started: wp_wfconfig and setting new default rows per sync: 20
+[2019-12-17 18:36:24.199020] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 0,20
+[2019-12-17 18:36:24.993867] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:25.002203] [DEBUG] Lastrun in : 0.80365705490112 seconds - rows throttle: 21 and remaining time: 14.372805118561
+[2019-12-17 18:36:25.009390] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.558 / 31.358
+[2019-12-17 18:36:25.031830] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 20,21
+[2019-12-17 18:36:25.897011] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:25.906138] [DEBUG] Lastrun in : 0.87471890449524 seconds - rows throttle: 23 and remaining time: 13.468873023987
+[2019-12-17 18:36:25.915261] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.579 / 31.358
+[2019-12-17 18:36:25.941094] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 41,23
+[2019-12-17 18:36:27.862061] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:27.877360] [DEBUG] Lastrun in : 1.9370899200439 seconds - rows throttle: 25 and remaining time: 11.497653007507
+[2019-12-17 18:36:27.886590] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.602 / 31.358
+[2019-12-17 18:36:27.915706] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 64,25
+[2019-12-17 18:36:28.927229] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:28.942703] [DEBUG] Lastrun in : 1.0275490283966 seconds - rows throttle: 27 and remaining time: 10.43231010437
+[2019-12-17 18:36:28.952259] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.627 / 31.358
+[2019-12-17 18:36:28.980760] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 89,27
+[2019-12-17 18:36:29.888801] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:29.905945] [DEBUG] Lastrun in : 0.92658114433289 seconds - rows throttle: 29 and remaining time: 9.4690699577332
+[2019-12-17 18:36:29.914412] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.654 / 31.358
+[2019-12-17 18:36:29.935094] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 116,29
+[2019-12-17 18:36:33.689430] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:33.696095] [DEBUG] Lastrun in : 3.7619619369507 seconds - rows throttle: 31 and remaining time: 5.6789169311523
+[2019-12-17 18:36:33.704785] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.683 / 31.358
+[2019-12-17 18:36:33.727395] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 145,31
+[2019-12-17 18:36:34.683292] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:34.691563] [DEBUG] Lastrun in : 0.96475791931152 seconds - rows throttle: 33 and remaining time: 4.6834480762482
+[2019-12-17 18:36:34.698225] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.714 / 31.358
+[2019-12-17 18:36:34.728045] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 176,33
+[2019-12-17 18:36:35.617802] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:35.625372] [DEBUG] Lastrun in : 0.89810490608215 seconds - rows throttle: 35 and remaining time: 3.7496359348297
+[2019-12-17 18:36:35.632445] [INFO] Database progress update: Total data: 1,1MB / 10,1MB - Total rows: 3.747 / 31.358
+[2019-12-17 18:36:35.658872] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 209,35
+[2019-12-17 18:36:36.740143] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:36.755285] [DEBUG] Lastrun in : 1.0972459316254 seconds - rows throttle: 37 and remaining time: 2.6197309494019
+[2019-12-17 18:36:36.766822] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.782 / 31.358
+[2019-12-17 18:36:36.787503] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfconfig` limit 244,37
+[2019-12-17 18:36:36.794000] [INFO] Marking table: wp_wfconfig as completed
+[2019-12-17 18:36:37.663028] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:37.670880] [DEBUG] Lastrun in : 0.88402009010315 seconds - rows throttle: 39 and remaining time: 1.7041320800781
+[2019-12-17 18:36:37.677216] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.784 / 31.358
+[2019-12-17 18:36:37.708288] [INFO] New table is started: wp_wfcrawlers and setting new default rows per sync: 20
+[2019-12-17 18:36:37.718040] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfcrawlers` limit 0,20
+[2019-12-17 18:36:37.724936] [INFO] Marking table: wp_wfcrawlers as completed
+[2019-12-17 18:36:37.733108] [DEBUG] Lastrun in : 0.016112089157104 seconds - rows throttle: 21 and remaining time: 1.641902923584
+[2019-12-17 18:36:37.739648] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.784 / 31.358
+[2019-12-17 18:36:37.762089] [INFO] New table is started: wp_wffilechanges and setting new default rows per sync: 500
+[2019-12-17 18:36:37.771891] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilechanges` limit 0,500
+[2019-12-17 18:36:37.779511] [INFO] Marking table: wp_wffilechanges as completed
+[2019-12-17 18:36:37.787411] [DEBUG] Lastrun in : 0.016520977020264 seconds - rows throttle: 525 and remaining time: 1.5875990390778
+[2019-12-17 18:36:37.794149] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.784 / 31.358
+[2019-12-17 18:36:37.814495] [INFO] New table is started: wp_wffilemods and setting new default rows per sync: 20
+[2019-12-17 18:36:37.822469] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 0,20
+[2019-12-17 18:36:39.178214] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:39.190584] [DEBUG] Lastrun in : 1.3694319725037 seconds - rows throttle: 21 and remaining time: 0.18443703651428
+[2019-12-17 18:36:39.203167] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.804 / 31.358
+[2019-12-17 18:36:39.227595] [INFO] Ending database synchronization loop with remaining time: 0.14741897583008 seconds
+[2019-12-17 18:36:39.248442] [INFO] Ending sync controller loop - with remaining time: 0.12656998634338
+[2019-12-17 18:36:39.607783] [INFO] Running sync controller loop - With allotted time: 26.659229040146 seconds
+[2019-12-17 18:36:39.616935] [INFO] Starting database synchronization loop with remaining time: 26.650074958801
+[2019-12-17 18:36:39.623215] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => http://rodin.armix.com.ar
+            [from] => http://localhost/rodin
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => http:\/\/rodin.armix.com.ar
+            [from] => http:\/\/localhost\/rodin
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => /home4/k1e2y4h6/public_html/subdomains3/rodin
+            [from] => C:/xampp7/htdocs/rodin
+        )
+
+)
+
+[2019-12-17 18:36:39.630147] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 20,21
+[2019-12-17 18:36:42.394708] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:42.404419] [DEBUG] Lastrun in : 2.7747361660004 seconds - rows throttle: 23 and remaining time: 23.862591028214
+[2019-12-17 18:36:42.411835] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.825 / 31.358
+[2019-12-17 18:36:42.445626] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 41,23
+[2019-12-17 18:36:43.414356] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:43.421403] [DEBUG] Lastrun in : 0.97677087783813 seconds - rows throttle: 25 and remaining time: 22.84560585022
+[2019-12-17 18:36:43.427912] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.848 / 31.358
+[2019-12-17 18:36:43.451710] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 64,25
+[2019-12-17 18:36:44.453527] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:44.460221] [DEBUG] Lastrun in : 1.0090301036835 seconds - rows throttle: 27 and remaining time: 21.806787967682
+[2019-12-17 18:36:44.466812] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.873 / 31.358
+[2019-12-17 18:36:44.503968] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 89,27
+[2019-12-17 18:36:45.475783] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:45.494331] [DEBUG] Lastrun in : 0.99102401733398 seconds - rows throttle: 29 and remaining time: 20.772680044174
+[2019-12-17 18:36:45.502761] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.900 / 31.358
+[2019-12-17 18:36:45.531251] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 116,29
+[2019-12-17 18:36:46.518553] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:46.528164] [DEBUG] Lastrun in : 0.99791288375854 seconds - rows throttle: 31 and remaining time: 19.738843917847
+[2019-12-17 18:36:46.535194] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.929 / 31.358
+[2019-12-17 18:36:46.556686] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 145,31
+[2019-12-17 18:36:47.671280] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:47.690597] [DEBUG] Lastrun in : 1.1345300674438 seconds - rows throttle: 33 and remaining time: 18.576418876648
+[2019-12-17 18:36:47.701583] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.960 / 31.358
+[2019-12-17 18:36:47.725482] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 176,33
+[2019-12-17 18:36:48.648939] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:48.657770] [DEBUG] Lastrun in : 0.93353199958801 seconds - rows throttle: 35 and remaining time: 17.609238862991
+[2019-12-17 18:36:48.665752] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 3.993 / 31.358
+[2019-12-17 18:36:48.694186] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 209,35
+[2019-12-17 18:36:49.693108] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:49.701575] [DEBUG] Lastrun in : 1.0080389976501 seconds - rows throttle: 37 and remaining time: 16.565434932709
+[2019-12-17 18:36:49.709665] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 4.028 / 31.358
+[2019-12-17 18:36:49.736538] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 244,37
+[2019-12-17 18:36:50.715280] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:50.736020] [DEBUG] Lastrun in : 1.0004029273987 seconds - rows throttle: 39 and remaining time: 15.530999898911
+[2019-12-17 18:36:50.745300] [INFO] Database progress update: Total data: 1,2MB / 10,1MB - Total rows: 4.065 / 31.358
+[2019-12-17 18:36:50.774155] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 281,39
+[2019-12-17 18:36:51.785666] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:51.795608] [DEBUG] Lastrun in : 1.022803068161 seconds - rows throttle: 41 and remaining time: 14.471400976181
+[2019-12-17 18:36:51.802128] [INFO] Database progress update: Total data: 1,3MB / 10,1MB - Total rows: 4.104 / 31.358
+[2019-12-17 18:36:51.829565] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 320,41
+[2019-12-17 18:36:52.813918] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:52.820620] [DEBUG] Lastrun in : 0.99174904823303 seconds - rows throttle: 44 and remaining time: 13.446393013
+[2019-12-17 18:36:52.826856] [INFO] Database progress update: Total data: 1,3MB / 10,1MB - Total rows: 4.145 / 31.358
+[2019-12-17 18:36:52.846604] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 361,44
+[2019-12-17 18:36:53.855344] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:53.862362] [DEBUG] Lastrun in : 1.0172121524811 seconds - rows throttle: 47 and remaining time: 12.404646873474
+[2019-12-17 18:36:53.869112] [INFO] Database progress update: Total data: 1,3MB / 10,1MB - Total rows: 4.189 / 31.358
+[2019-12-17 18:36:53.900855] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 405,47
+[2019-12-17 18:36:55.244423] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:55.261798] [DEBUG] Lastrun in : 1.3622260093689 seconds - rows throttle: 50 and remaining time: 11.005219936371
+[2019-12-17 18:36:55.270621] [INFO] Database progress update: Total data: 1,3MB / 10,1MB - Total rows: 4.236 / 31.358
+[2019-12-17 18:36:55.290112] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 452,50
+[2019-12-17 18:36:56.307919] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:56.330782] [DEBUG] Lastrun in : 1.0416760444641 seconds - rows throttle: 53 and remaining time: 9.9362330436707
+[2019-12-17 18:36:56.339773] [INFO] Database progress update: Total data: 1,3MB / 10,1MB - Total rows: 4.286 / 31.358
+[2019-12-17 18:36:56.367975] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 502,53
+[2019-12-17 18:36:57.516924] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:57.523195] [DEBUG] Lastrun in : 1.1567580699921 seconds - rows throttle: 56 and remaining time: 8.7438139915466
+[2019-12-17 18:36:57.529600] [INFO] Database progress update: Total data: 1,3MB / 10,1MB - Total rows: 4.339 / 31.358
+[2019-12-17 18:36:57.550664] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 555,56
+[2019-12-17 18:36:58.522431] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:58.530575] [DEBUG] Lastrun in : 0.98136901855469 seconds - rows throttle: 59 and remaining time: 7.7364330291748
+[2019-12-17 18:36:58.539031] [INFO] Database progress update: Total data: 1,4MB / 10,1MB - Total rows: 4.395 / 31.358
+[2019-12-17 18:36:58.561734] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 611,59
+[2019-12-17 18:36:59.649783] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:36:59.672997] [DEBUG] Lastrun in : 1.112457036972 seconds - rows throttle: 62 and remaining time: 6.5940198898315
+[2019-12-17 18:36:59.683049] [INFO] Database progress update: Total data: 1,4MB / 10,1MB - Total rows: 4.454 / 31.358
+[2019-12-17 18:36:59.703608] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 670,62
+[2019-12-17 18:37:00.893112] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:00.906536] [DEBUG] Lastrun in : 1.2044479846954 seconds - rows throttle: 66 and remaining time: 5.3604760169983
+[2019-12-17 18:37:00.915003] [INFO] Database progress update: Total data: 1,4MB / 10,1MB - Total rows: 4.516 / 31.358
+[2019-12-17 18:37:00.936586] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 732,66
+[2019-12-17 18:37:02.235781] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:02.255184] [DEBUG] Lastrun in : 1.3201911449432 seconds - rows throttle: 70 and remaining time: 4.0118269920349
+[2019-12-17 18:37:02.263376] [INFO] Database progress update: Total data: 1,4MB / 10,1MB - Total rows: 4.582 / 31.358
+[2019-12-17 18:37:02.284473] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 798,70
+[2019-12-17 18:37:03.489659] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:03.501252] [DEBUG] Lastrun in : 1.2184710502625 seconds - rows throttle: 74 and remaining time: 2.7657599449158
+[2019-12-17 18:37:03.507895] [INFO] Database progress update: Total data: 1,4MB / 10,1MB - Total rows: 4.652 / 31.358
+[2019-12-17 18:37:03.534153] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 868,74
+[2019-12-17 18:37:04.598423] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:04.609232] [DEBUG] Lastrun in : 1.0772778987885 seconds - rows throttle: 78 and remaining time: 1.6577799320221
+[2019-12-17 18:37:04.618184] [INFO] Database progress update: Total data: 1,5MB / 10,1MB - Total rows: 4.726 / 31.358
+[2019-12-17 18:37:04.652542] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 942,78
+[2019-12-17 18:37:05.679915] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:05.697372] [DEBUG] Lastrun in : 1.0468890666962 seconds - rows throttle: 82 and remaining time: 0.56964707374573
+[2019-12-17 18:37:05.715155] [INFO] Database progress update: Total data: 1,5MB / 10,1MB - Total rows: 4.804 / 31.358
+[2019-12-17 18:37:05.746586] [INFO] Ending database synchronization loop with remaining time: 0.520427942276 seconds
+[2019-12-17 18:37:05.766172] [INFO] Ending sync controller loop - with remaining time: 0.50083899497986
+[2019-12-17 18:37:06.169132] [INFO] Running sync controller loop - With allotted time: 26.657879829407 seconds
+[2019-12-17 18:37:06.176846] [INFO] Starting database synchronization loop with remaining time: 26.650164842606
+[2019-12-17 18:37:06.183564] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => http://rodin.armix.com.ar
+            [from] => http://localhost/rodin
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => http:\/\/rodin.armix.com.ar
+            [from] => http:\/\/localhost\/rodin
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => /home4/k1e2y4h6/public_html/subdomains3/rodin
+            [from] => C:/xampp7/htdocs/rodin
+        )
+
+)
+
+[2019-12-17 18:37:06.191845] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1020,82
+[2019-12-17 18:37:07.169913] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:07.176939] [DEBUG] Lastrun in : 0.98678398132324 seconds - rows throttle: 87 and remaining time: 25.650069952011
+[2019-12-17 18:37:07.187974] [INFO] Database progress update: Total data: 1,5MB / 10,1MB - Total rows: 4.886 / 31.358
+[2019-12-17 18:37:07.215984] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1102,87
+[2019-12-17 18:37:08.220158] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:08.240716] [DEBUG] Lastrun in : 1.0270750522614 seconds - rows throttle: 92 and remaining time: 24.586298942566
+[2019-12-17 18:37:08.252021] [INFO] Database progress update: Total data: 1,5MB / 10,1MB - Total rows: 4.973 / 31.358
+[2019-12-17 18:37:08.280345] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1189,92
+[2019-12-17 18:37:11.038559] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:11.045366] [DEBUG] Lastrun in : 2.7676680088043 seconds - rows throttle: 97 and remaining time: 21.781644821167
+[2019-12-17 18:37:11.051794] [INFO] Database progress update: Total data: 1,6MB / 10,1MB - Total rows: 5.065 / 31.358
+[2019-12-17 18:37:11.078920] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1281,97
+[2019-12-17 18:37:12.047086] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:12.053772] [DEBUG] Lastrun in : 0.97734999656677 seconds - rows throttle: 102 and remaining time: 20.773235797882
+[2019-12-17 18:37:12.060297] [INFO] Database progress update: Total data: 1,6MB / 10,1MB - Total rows: 5.162 / 31.358
+[2019-12-17 18:37:12.084095] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1378,102
+[2019-12-17 18:37:13.037016] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:13.043804] [DEBUG] Lastrun in : 0.96322298049927 seconds - rows throttle: 108 and remaining time: 19.78320479393
+[2019-12-17 18:37:13.051199] [INFO] Database progress update: Total data: 1,6MB / 10,1MB - Total rows: 5.264 / 31.358
+[2019-12-17 18:37:13.084749] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1480,108
+[2019-12-17 18:37:14.048018] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:14.054528] [DEBUG] Lastrun in : 0.9752049446106 seconds - rows throttle: 114 and remaining time: 18.772480964661
+[2019-12-17 18:37:14.061320] [INFO] Database progress update: Total data: 1,7MB / 10,1MB - Total rows: 5.372 / 31.358
+[2019-12-17 18:37:14.104994] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1588,114
+[2019-12-17 18:37:15.080495] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:15.098080] [DEBUG] Lastrun in : 1.0002570152283 seconds - rows throttle: 120 and remaining time: 17.728950977325
+[2019-12-17 18:37:15.109640] [INFO] Database progress update: Total data: 1,7MB / 10,1MB - Total rows: 5.486 / 31.358
+[2019-12-17 18:37:15.142229] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1702,120
+[2019-12-17 18:37:16.118894] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:16.127292] [DEBUG] Lastrun in : 0.98915505409241 seconds - rows throttle: 126 and remaining time: 16.699719905853
+[2019-12-17 18:37:16.136387] [INFO] Database progress update: Total data: 1,7MB / 10,1MB - Total rows: 5.606 / 31.358
+[2019-12-17 18:37:16.166923] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1822,126
+[2019-12-17 18:37:17.156679] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:17.175743] [DEBUG] Lastrun in : 1.0113170146942 seconds - rows throttle: 133 and remaining time: 15.651278972626
+[2019-12-17 18:37:17.187393] [INFO] Database progress update: Total data: 1,8MB / 10,1MB - Total rows: 5.732 / 31.358
+[2019-12-17 18:37:17.218646] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 1948,133
+[2019-12-17 18:37:18.284139] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:18.291435] [DEBUG] Lastrun in : 1.0758159160614 seconds - rows throttle: 140 and remaining time: 14.535574913025
+[2019-12-17 18:37:18.299420] [INFO] Database progress update: Total data: 1,8MB / 10,1MB - Total rows: 5.865 / 31.358
+[2019-12-17 18:37:18.331638] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 2081,140
+[2019-12-17 18:37:19.442070] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:19.449644] [DEBUG] Lastrun in : 1.1218478679657 seconds - rows throttle: 147 and remaining time: 13.377364873886
+[2019-12-17 18:37:19.457855] [INFO] Database progress update: Total data: 1,9MB / 10,1MB - Total rows: 6.005 / 31.358
+[2019-12-17 18:37:19.491165] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 2221,147
+[2019-12-17 18:37:20.847522] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:20.856543] [DEBUG] Lastrun in : 1.3699040412903 seconds - rows throttle: 155 and remaining time: 11.970467805862
+[2019-12-17 18:37:20.865543] [INFO] Database progress update: Total data: 1,9MB / 10,1MB - Total rows: 6.152 / 31.358
+[2019-12-17 18:37:20.891864] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 2368,155
+[2019-12-17 18:37:22.073895] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:22.081690] [DEBUG] Lastrun in : 1.1934201717377 seconds - rows throttle: 163 and remaining time: 10.745317935944
+[2019-12-17 18:37:22.087984] [INFO] Database progress update: Total data: 2,0MB / 10,1MB - Total rows: 6.307 / 31.358
+[2019-12-17 18:37:22.118140] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 2523,163
+[2019-12-17 18:37:23.252435] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:23.275108] [DEBUG] Lastrun in : 1.1596279144287 seconds - rows throttle: 172 and remaining time: 9.5519139766693
+[2019-12-17 18:37:23.289625] [INFO] Database progress update: Total data: 2,0MB / 10,1MB - Total rows: 6.470 / 31.358
+[2019-12-17 18:37:23.325521] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 2686,172
+[2019-12-17 18:37:24.548504] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:24.555105] [DEBUG] Lastrun in : 1.2329468727112 seconds - rows throttle: 181 and remaining time: 8.2719058990479
+[2019-12-17 18:37:24.562574] [INFO] Database progress update: Total data: 2,1MB / 10,1MB - Total rows: 6.642 / 31.358
+[2019-12-17 18:37:24.589225] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 2858,181
+[2019-12-17 18:37:25.754728] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:25.766011] [DEBUG] Lastrun in : 1.1800909042358 seconds - rows throttle: 191 and remaining time: 7.0610008239746
+[2019-12-17 18:37:25.774794] [INFO] Database progress update: Total data: 2,1MB / 10,1MB - Total rows: 6.823 / 31.358
+[2019-12-17 18:37:25.799728] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 3039,191
+[2019-12-17 18:37:26.926041] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:26.952745] [DEBUG] Lastrun in : 1.1570951938629 seconds - rows throttle: 201 and remaining time: 5.8742740154266
+[2019-12-17 18:37:26.970092] [INFO] Database progress update: Total data: 2,2MB / 10,1MB - Total rows: 7.014 / 31.358
+[2019-12-17 18:37:27.022844] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 3230,201
+[2019-12-17 18:37:28.228609] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:28.246728] [DEBUG] Lastrun in : 1.227303981781 seconds - rows throttle: 212 and remaining time: 4.5802958011627
+[2019-12-17 18:37:28.256531] [INFO] Database progress update: Total data: 2,3MB / 10,1MB - Total rows: 7.215 / 31.358
+[2019-12-17 18:37:28.287473] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 3431,212
+[2019-12-17 18:37:29.462820] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:29.469109] [DEBUG] Lastrun in : 1.1859259605408 seconds - rows throttle: 223 and remaining time: 3.3578999042511
+[2019-12-17 18:37:29.481169] [INFO] Database progress update: Total data: 2,3MB / 10,1MB - Total rows: 7.427 / 31.358
+[2019-12-17 18:37:29.515386] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 3643,223
+[2019-12-17 18:37:30.645326] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:30.654462] [DEBUG] Lastrun in : 1.1440539360046 seconds - rows throttle: 235 and remaining time: 2.1725490093231
+[2019-12-17 18:37:30.664306] [INFO] Database progress update: Total data: 2,4MB / 10,1MB - Total rows: 7.650 / 31.358
+[2019-12-17 18:37:30.691868] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 3866,235
+[2019-12-17 18:37:31.875457] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:31.886840] [DEBUG] Lastrun in : 1.1997170448303 seconds - rows throttle: 247 and remaining time: 0.94017195701599
+[2019-12-17 18:37:31.897987] [INFO] Database progress update: Total data: 2,5MB / 10,1MB - Total rows: 7.885 / 31.358
+[2019-12-17 18:37:31.925622] [INFO] Ending database synchronization loop with remaining time: 0.90139079093933 seconds
+[2019-12-17 18:37:31.946472] [INFO] Ending sync controller loop - with remaining time: 0.880539894104
+[2019-12-17 18:37:32.354138] [INFO] Running sync controller loop - With allotted time: 26.61487698555 seconds
+[2019-12-17 18:37:32.367146] [INFO] Starting database synchronization loop with remaining time: 26.601866006851
+[2019-12-17 18:37:32.373593] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => http://rodin.armix.com.ar
+            [from] => http://localhost/rodin
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => http:\/\/rodin.armix.com.ar
+            [from] => http:\/\/localhost\/rodin
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => /home4/k1e2y4h6/public_html/subdomains3/rodin
+            [from] => C:/xampp7/htdocs/rodin
+        )
+
+)
+
+[2019-12-17 18:37:32.386022] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 4101,247
+[2019-12-17 18:37:33.586335] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:33.606567] [DEBUG] Lastrun in : 1.2245850563049 seconds - rows throttle: 260 and remaining time: 25.362451076508
+[2019-12-17 18:37:33.625071] [INFO] Database progress update: Total data: 2,5MB / 10,1MB - Total rows: 8.132 / 31.358
+[2019-12-17 18:37:33.656462] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 4348,260
+[2019-12-17 18:37:34.825359] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:34.835576] [DEBUG] Lastrun in : 1.1849551200867 seconds - rows throttle: 273 and remaining time: 24.133433103561
+[2019-12-17 18:37:34.845229] [INFO] Database progress update: Total data: 2,6MB / 10,1MB - Total rows: 8.392 / 31.358
+[2019-12-17 18:37:34.886807] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 4608,273
+[2019-12-17 18:37:36.059609] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:36.068969] [DEBUG] Lastrun in : 1.1988899707794 seconds - rows throttle: 287 and remaining time: 22.900041103363
+[2019-12-17 18:37:36.077783] [INFO] Database progress update: Total data: 2,7MB / 10,1MB - Total rows: 8.665 / 31.358
+[2019-12-17 18:37:36.113555] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 4881,287
+[2019-12-17 18:37:37.334988] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:37.341550] [DEBUG] Lastrun in : 1.2368180751801 seconds - rows throttle: 302 and remaining time: 21.627462148666
+[2019-12-17 18:37:37.349049] [INFO] Database progress update: Total data: 2,8MB / 10,1MB - Total rows: 8.952 / 31.358
+[2019-12-17 18:37:37.384006] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 5168,302
+[2019-12-17 18:37:38.574162] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:38.591063] [DEBUG] Lastrun in : 1.2136580944061 seconds - rows throttle: 318 and remaining time: 20.377954006195
+[2019-12-17 18:37:38.603739] [INFO] Database progress update: Total data: 2,9MB / 10,1MB - Total rows: 9.254 / 31.358
+[2019-12-17 18:37:38.638914] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 5470,318
+[2019-12-17 18:37:39.837352] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:39.850172] [DEBUG] Lastrun in : 1.2183849811554 seconds - rows throttle: 334 and remaining time: 19.118843078613
+[2019-12-17 18:37:39.857306] [INFO] Database progress update: Total data: 3,0MB / 10,1MB - Total rows: 9.572 / 31.358
+[2019-12-17 18:37:39.900878] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 5788,334
+[2019-12-17 18:37:41.148380] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:41.156277] [DEBUG] Lastrun in : 1.2643420696259 seconds - rows throttle: 351 and remaining time: 17.81273317337
+[2019-12-17 18:37:41.167261] [INFO] Database progress update: Total data: 3,1MB / 10,1MB - Total rows: 9.906 / 31.358
+[2019-12-17 18:37:41.203059] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 6122,351
+[2019-12-17 18:37:42.914189] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:42.925143] [DEBUG] Lastrun in : 1.728511095047 seconds - rows throttle: 369 and remaining time: 16.043871164322
+[2019-12-17 18:37:42.934101] [INFO] Database progress update: Total data: 3,2MB / 10,1MB - Total rows: 10.257 / 31.358
+[2019-12-17 18:37:42.964130] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 6473,369
+[2019-12-17 18:37:44.193410] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:44.201113] [DEBUG] Lastrun in : 1.2446050643921 seconds - rows throttle: 388 and remaining time: 14.767894983292
+[2019-12-17 18:37:44.211147] [INFO] Database progress update: Total data: 3,3MB / 10,1MB - Total rows: 10.626 / 31.358
+[2019-12-17 18:37:44.254151] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 6842,388
+[2019-12-17 18:37:46.817901] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:46.824706] [DEBUG] Lastrun in : 2.5797770023346 seconds - rows throttle: 408 and remaining time: 12.144306182861
+[2019-12-17 18:37:46.832803] [INFO] Database progress update: Total data: 3,5MB / 10,1MB - Total rows: 11.014 / 31.358
+[2019-12-17 18:37:46.862510] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 7230,408
+[2019-12-17 18:37:48.171836] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:48.189109] [DEBUG] Lastrun in : 1.3355350494385 seconds - rows throttle: 429 and remaining time: 10.77992105484
+[2019-12-17 18:37:48.200811] [INFO] Database progress update: Total data: 3,6MB / 10,1MB - Total rows: 11.422 / 31.358
+[2019-12-17 18:37:48.236838] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 7638,429
+[2019-12-17 18:37:49.479750] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:49.494694] [DEBUG] Lastrun in : 1.2657430171967 seconds - rows throttle: 451 and remaining time: 9.4743151664734
+[2019-12-17 18:37:49.501158] [INFO] Database progress update: Total data: 3,7MB / 10,1MB - Total rows: 11.851 / 31.358
+[2019-12-17 18:37:49.537543] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 8067,451
+[2019-12-17 18:37:51.083457] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:51.090342] [DEBUG] Lastrun in : 1.5629289150238 seconds - rows throttle: 474 and remaining time: 7.8786671161652
+[2019-12-17 18:37:51.097745] [INFO] Database progress update: Total data: 3,9MB / 10,1MB - Total rows: 12.302 / 31.358
+[2019-12-17 18:37:51.131843] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 8518,474
+[2019-12-17 18:37:53.719263] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:53.727452] [DEBUG] Lastrun in : 2.6061239242554 seconds - rows throttle: 498 and remaining time: 5.2415599822998
+[2019-12-17 18:37:53.734329] [INFO] Database progress update: Total data: 4,0MB / 10,1MB - Total rows: 12.776 / 31.358
+[2019-12-17 18:37:53.781776] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 8992,498
+[2019-12-17 18:37:55.233421] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:55.249698] [DEBUG] Lastrun in : 1.4859781265259 seconds - rows throttle: 523 and remaining time: 3.7193231582642
+[2019-12-17 18:37:55.260234] [INFO] Database progress update: Total data: 4,2MB / 10,1MB - Total rows: 13.274 / 31.358
+[2019-12-17 18:37:55.328484] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 9490,523
+[2019-12-17 18:37:57.582220] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:57.589893] [DEBUG] Lastrun in : 2.2941241264343 seconds - rows throttle: 550 and remaining time: 1.3791220188141
+[2019-12-17 18:37:57.599370] [INFO] Database progress update: Total data: 4,3MB / 10,1MB - Total rows: 13.797 / 31.358
+[2019-12-17 18:37:57.622544] [INFO] Ending database synchronization loop with remaining time: 1.3464682102203 seconds
+[2019-12-17 18:37:57.644119] [INFO] Ending sync controller loop - with remaining time: 1.3248960971832
+[2019-12-17 18:37:58.012073] [INFO] Running sync controller loop - With allotted time: 26.651937961578 seconds
+[2019-12-17 18:37:58.019987] [INFO] Starting database synchronization loop with remaining time: 26.644022941589
+[2019-12-17 18:37:58.027578] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => http://rodin.armix.com.ar
+            [from] => http://localhost/rodin
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => http:\/\/rodin.armix.com.ar
+            [from] => http:\/\/localhost\/rodin
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => /home4/k1e2y4h6/public_html/subdomains3/rodin
+            [from] => C:/xampp7/htdocs/rodin
+        )
+
+)
+
+[2019-12-17 18:37:58.043086] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 10013,550
+[2019-12-17 18:37:59.569939] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:37:59.578613] [DEBUG] Lastrun in : 1.5444548130035 seconds - rows throttle: 578 and remaining time: 25.085400104523
+[2019-12-17 18:37:59.586788] [INFO] Database progress update: Total data: 4,5MB / 10,1MB - Total rows: 14.347 / 31.358
+[2019-12-17 18:37:59.639273] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 10563,578
+[2019-12-17 18:38:01.037499] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:01.046549] [DEBUG] Lastrun in : 1.4214680194855 seconds - rows throttle: 607 and remaining time: 23.617459058762
+[2019-12-17 18:38:01.053284] [INFO] Database progress update: Total data: 4,7MB / 10,1MB - Total rows: 14.925 / 31.358
+[2019-12-17 18:38:01.091226] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 11141,607
+[2019-12-17 18:38:02.811908] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:02.825597] [DEBUG] Lastrun in : 1.748752117157 seconds - rows throttle: 638 and remaining time: 21.838423967361
+[2019-12-17 18:38:02.835056] [INFO] Database progress update: Total data: 5,0MB / 10,1MB - Total rows: 15.532 / 31.358
+[2019-12-17 18:38:02.884822] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 11748,638
+[2019-12-17 18:38:04.545183] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:04.552191] [DEBUG] Lastrun in : 1.6807758808136 seconds - rows throttle: 670 and remaining time: 20.11181807518
+[2019-12-17 18:38:04.560837] [INFO] Database progress update: Total data: 5,2MB / 10,1MB - Total rows: 16.170 / 31.358
+[2019-12-17 18:38:04.613487] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 12386,670
+[2019-12-17 18:38:06.257173] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:06.267397] [DEBUG] Lastrun in : 1.6734499931335 seconds - rows throttle: 704 and remaining time: 18.396614074707
+[2019-12-17 18:38:06.277392] [INFO] Database progress update: Total data: 5,4MB / 10,1MB - Total rows: 16.840 / 31.358
+[2019-12-17 18:38:06.323060] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wffilemods` limit 13056,704
+[2019-12-17 18:38:06.330672] [INFO] Marking table: wp_wffilemods as completed
+[2019-12-17 18:38:07.903352] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:07.912773] [DEBUG] Lastrun in : 1.6085710525513 seconds - rows throttle: 740 and remaining time: 16.751236915588
+[2019-12-17 18:38:07.919425] [INFO] Database progress update: Total data: 5,5MB / 10,1MB - Total rows: 17.072 / 31.358
+[2019-12-17 18:38:07.951218] [INFO] New table is started: wp_wfhits and setting new default rows per sync: 20
+[2019-12-17 18:38:07.961311] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfhits` where `id` > 0 order by `id`  limit 20
+[2019-12-17 18:38:07.967853] [INFO] Marking table: wp_wfhits as completed
+[2019-12-17 18:38:10.812188] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:10.819069] [DEBUG] Lastrun in : 2.8588759899139 seconds - rows throttle: 21 and remaining time: 13.84494304657
+[2019-12-17 18:38:10.827742] [INFO] Database progress update: Total data: 5,5MB / 10,1MB - Total rows: 17.076 / 31.358
+[2019-12-17 18:38:10.860696] [INFO] New table is started: wp_wfhoover and setting new default rows per sync: 20
+[2019-12-17 18:38:10.870669] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfhoover` where `id` > 0 order by `id`  limit 20
+[2019-12-17 18:38:10.880805] [INFO] Marking table: wp_wfhoover as completed
+[2019-12-17 18:38:10.890773] [DEBUG] Lastrun in : 0.021086931228638 seconds - rows throttle: 21 and remaining time: 13.773237943649
+[2019-12-17 18:38:10.898721] [INFO] Database progress update: Total data: 5,5MB / 10,1MB - Total rows: 17.076 / 31.358
+[2019-12-17 18:38:10.923863] [INFO] New table is started: wp_wfissues and setting new default rows per sync: 122
+[2019-12-17 18:38:10.933111] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfissues` where `id` > 0 order by `id`  limit 122
+[2019-12-17 18:38:10.939683] [INFO] Marking table: wp_wfissues as completed
+[2019-12-17 18:38:12.027741] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:12.035324] [DEBUG] Lastrun in : 1.103453874588 seconds - rows throttle: 129 and remaining time: 12.628684997559
+[2019-12-17 18:38:12.043309] [INFO] Database progress update: Total data: 5,5MB / 10,1MB - Total rows: 17.077 / 31.358
+[2019-12-17 18:38:12.076296] [INFO] New table is started: wp_wfknownfilelist and setting new default rows per sync: 500
+[2019-12-17 18:38:12.089754] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 0 order by `id`  limit 500
+[2019-12-17 18:38:13.060033] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:13.067862] [DEBUG] Lastrun in : 0.98519706726074 seconds - rows throttle: 525 and remaining time: 11.596148014069
+[2019-12-17 18:38:13.076796] [INFO] Database progress update: Total data: 5,7MB / 10,1MB - Total rows: 17.577 / 31.358
+[2019-12-17 18:38:13.104515] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 500 order by `id`  limit 525
+[2019-12-17 18:38:14.075405] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:14.081908] [DEBUG] Lastrun in : 0.97993993759155 seconds - rows throttle: 552 and remaining time: 10.582103967667
+[2019-12-17 18:38:14.088196] [INFO] Database progress update: Total data: 5,8MB / 10,1MB - Total rows: 18.102 / 31.358
+[2019-12-17 18:38:14.117996] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 1025 order by `id`  limit 552
+[2019-12-17 18:38:15.694527] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:15.709178] [DEBUG] Lastrun in : 1.5940542221069 seconds - rows throttle: 580 and remaining time: 8.954833984375
+[2019-12-17 18:38:15.717489] [INFO] Database progress update: Total data: 6,0MB / 10,1MB - Total rows: 18.654 / 31.358
+[2019-12-17 18:38:15.759185] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 1577 order by `id`  limit 580
+[2019-12-17 18:38:16.816477] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:16.823620] [DEBUG] Lastrun in : 1.0732870101929 seconds - rows throttle: 609 and remaining time: 7.840390920639
+[2019-12-17 18:38:16.833222] [INFO] Database progress update: Total data: 6,2MB / 10,1MB - Total rows: 19.234 / 31.358
+[2019-12-17 18:38:16.861068] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 2157 order by `id`  limit 609
+[2019-12-17 18:38:17.893439] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:17.909112] [DEBUG] Lastrun in : 1.0517981052399 seconds - rows throttle: 640 and remaining time: 6.7548990249634
+[2019-12-17 18:38:17.916796] [INFO] Database progress update: Total data: 6,4MB / 10,1MB - Total rows: 19.843 / 31.358
+[2019-12-17 18:38:17.945911] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 2766 order by `id`  limit 640
+[2019-12-17 18:38:18.965711] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:18.999427] [DEBUG] Lastrun in : 1.0585041046143 seconds - rows throttle: 672 and remaining time: 5.6645839214325
+[2019-12-17 18:38:19.007068] [INFO] Database progress update: Total data: 6,6MB / 10,1MB - Total rows: 20.483 / 31.358
+[2019-12-17 18:38:19.042714] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 3406 order by `id`  limit 672
+[2019-12-17 18:38:20.044952] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:20.051335] [DEBUG] Lastrun in : 1.0111029148102 seconds - rows throttle: 706 and remaining time: 4.6126749515533
+[2019-12-17 18:38:20.058981] [INFO] Database progress update: Total data: 6,8MB / 10,1MB - Total rows: 21.155 / 31.358
+[2019-12-17 18:38:20.084542] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 4078 order by `id`  limit 706
+[2019-12-17 18:38:21.143348] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:21.150268] [DEBUG] Lastrun in : 1.0695559978485 seconds - rows throttle: 742 and remaining time: 3.5137441158295
+[2019-12-17 18:38:21.158609] [INFO] Database progress update: Total data: 7,0MB / 10,1MB - Total rows: 21.861 / 31.358
+[2019-12-17 18:38:21.201264] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 4784 order by `id`  limit 742
+[2019-12-17 18:38:22.446799] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:22.453223] [DEBUG] Lastrun in : 1.2563021183014 seconds - rows throttle: 780 and remaining time: 2.2107861042023
+[2019-12-17 18:38:22.463479] [INFO] Database progress update: Total data: 7,3MB / 10,1MB - Total rows: 22.603 / 31.358
+[2019-12-17 18:38:22.630661] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 5526 order by `id`  limit 780
+[2019-12-17 18:38:23.730307] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:23.743290] [DEBUG] Lastrun in : 1.1591920852661 seconds - rows throttle: 819 and remaining time: 0.92072892189026
+[2019-12-17 18:38:23.754661] [INFO] Database progress update: Total data: 7,5MB / 10,1MB - Total rows: 23.383 / 31.358
+[2019-12-17 18:38:23.785125] [INFO] Ending database synchronization loop with remaining time: 0.8788890838623 seconds
+[2019-12-17 18:38:23.813075] [INFO] Ending sync controller loop - with remaining time: 0.8509521484375
+[2019-12-17 18:38:24.239973] [INFO] Running sync controller loop - With allotted time: 26.592041969299 seconds
+[2019-12-17 18:38:24.252558] [INFO] Starting database synchronization loop with remaining time: 26.579454898834
+[2019-12-17 18:38:24.261997] [DEBUG] Search/replaces:
+
+Array
+(
+    [0] => stdClass Object
+        (
+            [to] => http://rodin.armix.com.ar
+            [from] => http://localhost/rodin
+        )
+
+    [1] => stdClass Object
+        (
+            [to] => http:\/\/rodin.armix.com.ar
+            [from] => http:\/\/localhost\/rodin
+        )
+
+    [2] => stdClass Object
+        (
+            [to] => /home4/k1e2y4h6/public_html/subdomains3/rodin
+            [from] => C:/xampp7/htdocs/rodin
+        )
+
+)
+
+[2019-12-17 18:38:24.276939] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 6306 order by `id`  limit 819
+[2019-12-17 18:38:25.332135] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:25.356215] [DEBUG] Lastrun in : 1.085294008255 seconds - rows throttle: 860 and remaining time: 25.475806951523
+[2019-12-17 18:38:25.379861] [INFO] Database progress update: Total data: 7,8MB / 10,1MB - Total rows: 24.202 / 31.358
+[2019-12-17 18:38:25.427049] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 7125 order by `id`  limit 860
+[2019-12-17 18:38:26.391878] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:26.410979] [DEBUG] Lastrun in : 0.9885528087616 seconds - rows throttle: 903 and remaining time: 24.421032905579
+[2019-12-17 18:38:26.419804] [INFO] Database progress update: Total data: 8,0MB / 10,1MB - Total rows: 25.062 / 31.358
+[2019-12-17 18:38:26.457956] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 7985 order by `id`  limit 903
+[2019-12-17 18:38:27.468532] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:27.479102] [DEBUG] Lastrun in : 1.029021024704 seconds - rows throttle: 949 and remaining time: 23.352909088135
+[2019-12-17 18:38:27.495452] [INFO] Database progress update: Total data: 8,3MB / 10,1MB - Total rows: 25.965 / 31.358
+[2019-12-17 18:38:27.526105] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 8888 order by `id`  limit 949
+[2019-12-17 18:38:28.476772] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:28.491560] [DEBUG] Lastrun in : 0.97202301025391 seconds - rows throttle: 997 and remaining time: 22.340451955795
+[2019-12-17 18:38:28.498293] [INFO] Database progress update: Total data: 8,6MB / 10,1MB - Total rows: 26.914 / 31.358
+[2019-12-17 18:38:28.520513] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 9837 order by `id`  limit 997
+[2019-12-17 18:38:29.532815] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:29.540140] [DEBUG] Lastrun in : 1.022068977356 seconds - rows throttle: 1047 and remaining time: 21.291871070862
+[2019-12-17 18:38:29.546750] [INFO] Database progress update: Total data: 9,0MB / 10,1MB - Total rows: 27.911 / 31.358
+[2019-12-17 18:38:29.576970] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 10834 order by `id`  limit 1047
+[2019-12-17 18:38:30.535604] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:31.411804] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:31.421205] [DEBUG] Lastrun in : 1.8477380275726 seconds - rows throttle: 1100 and remaining time: 19.410805940628
+[2019-12-17 18:38:31.429513] [INFO] Database progress update: Total data: 9,3MB / 10,1MB - Total rows: 28.958 / 31.358
+[2019-12-17 18:38:31.461762] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 11881 order by `id`  limit 1100
+[2019-12-17 18:38:32.597236] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:33.536854] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:33.546148] [DEBUG] Lastrun in : 2.0877149105072 seconds - rows throttle: 1155 and remaining time: 17.285861968994
+[2019-12-17 18:38:33.553655] [INFO] Database progress update: Total data: 9,6MB / 10,1MB - Total rows: 30.058 / 31.358
+[2019-12-17 18:38:33.589903] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfknownfilelist` where `id` > 12981 order by `id`  limit 1155
+[2019-12-17 18:38:33.596816] [INFO] Marking table: wp_wfknownfilelist as completed
+[2019-12-17 18:38:34.545756] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:34.552285] [DEBUG] Lastrun in : 0.96433305740356 seconds - rows throttle: 1213 and remaining time: 16.279724121094
+[2019-12-17 18:38:34.560111] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.365 / 31.358
+[2019-12-17 18:38:34.585491] [INFO] New table is started: wp_wflivetraffichuman and setting new default rows per sync: 20
+[2019-12-17 18:38:34.593790] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wflivetraffichuman` limit 0,20
+[2019-12-17 18:38:34.600336] [INFO] Marking table: wp_wflivetraffichuman as completed
+[2019-12-17 18:38:34.607639] [DEBUG] Lastrun in : 0.014255046844482 seconds - rows throttle: 21 and remaining time: 16.224370002747
+[2019-12-17 18:38:34.614347] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.365 / 31.358
+[2019-12-17 18:38:34.636472] [INFO] New table is started: wp_wflocs and setting new default rows per sync: 20
+[2019-12-17 18:38:34.645648] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wflocs` limit 0,20
+[2019-12-17 18:38:34.652413] [INFO] Marking table: wp_wflocs as completed
+[2019-12-17 18:38:34.662254] [DEBUG] Lastrun in : 0.017756938934326 seconds - rows throttle: 21 and remaining time: 16.16975402832
+[2019-12-17 18:38:34.669137] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.365 / 31.358
+[2019-12-17 18:38:34.694916] [INFO] New table is started: wp_wflogins and setting new default rows per sync: 20
+[2019-12-17 18:38:34.702775] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wflogins` where `id` > 0 order by `id`  limit 20
+[2019-12-17 18:38:34.710659] [INFO] Marking table: wp_wflogins as completed
+[2019-12-17 18:38:35.654418] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:35.666155] [DEBUG] Lastrun in : 0.96465492248535 seconds - rows throttle: 21 and remaining time: 15.165862083435
+[2019-12-17 18:38:35.678243] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.369 / 31.358
+[2019-12-17 18:38:35.701055] [INFO] New table is started: wp_wfls_2fa_secrets and setting new default rows per sync: 20
+[2019-12-17 18:38:35.710142] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfls_2fa_secrets` where `id` > 0 order by `id`  limit 20
+[2019-12-17 18:38:35.716717] [INFO] Marking table: wp_wfls_2fa_secrets as completed
+[2019-12-17 18:38:35.725069] [DEBUG] Lastrun in : 0.016250848770142 seconds - rows throttle: 21 and remaining time: 15.106939077377
+[2019-12-17 18:38:35.731713] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.369 / 31.358
+[2019-12-17 18:38:35.752980] [INFO] New table is started: wp_wfls_settings and setting new default rows per sync: 20
+[2019-12-17 18:38:35.761221] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfls_settings` limit 0,20
+[2019-12-17 18:38:35.767666] [INFO] Marking table: wp_wfls_settings as completed
+[2019-12-17 18:38:36.618613] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:36.627143] [DEBUG] Lastrun in : 0.86639189720154 seconds - rows throttle: 21 and remaining time: 14.20486497879
+[2019-12-17 18:38:36.633859] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.388 / 31.358
+[2019-12-17 18:38:36.655854] [INFO] New table is started: wp_wfnotifications and setting new default rows per sync: 122
+[2019-12-17 18:38:36.665041] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfnotifications` limit 0,122
+[2019-12-17 18:38:36.672496] [INFO] Marking table: wp_wfnotifications as completed
+[2019-12-17 18:38:39.571770] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:39.580258] [DEBUG] Lastrun in : 2.9165790081024 seconds - rows throttle: 129 and remaining time: 11.251756906509
+[2019-12-17 18:38:39.587278] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.391 / 31.358
+[2019-12-17 18:38:39.615990] [INFO] New table is started: wp_wfpendingissues and setting new default rows per sync: 500
+[2019-12-17 18:38:39.625189] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfpendingissues` where `id` > 0 order by `id`  limit 500
+[2019-12-17 18:38:39.631727] [INFO] Marking table: wp_wfpendingissues as completed
+[2019-12-17 18:38:39.641571] [DEBUG] Lastrun in : 0.017714023590088 seconds - rows throttle: 525 and remaining time: 11.190454006195
+[2019-12-17 18:38:39.648059] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.391 / 31.358
+[2019-12-17 18:38:39.670224] [INFO] New table is started: wp_wfreversecache and setting new default rows per sync: 20
+[2019-12-17 18:38:39.679467] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfreversecache` limit 0,20
+[2019-12-17 18:38:39.685885] [INFO] Marking table: wp_wfreversecache as completed
+[2019-12-17 18:38:39.693790] [DEBUG] Lastrun in : 0.01554799079895 seconds - rows throttle: 21 and remaining time: 11.138219118118
+[2019-12-17 18:38:39.700280] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.391 / 31.358
+[2019-12-17 18:38:39.724696] [INFO] New table is started: wp_wfsnipcache and setting new default rows per sync: 500
+[2019-12-17 18:38:39.733988] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfsnipcache` where `id` > 0 order by `id`  limit 500
+[2019-12-17 18:38:39.743371] [INFO] Marking table: wp_wfsnipcache as completed
+[2019-12-17 18:38:39.755765] [DEBUG] Lastrun in : 0.023138046264648 seconds - rows throttle: 525 and remaining time: 11.076246976852
+[2019-12-17 18:38:39.762479] [INFO] Database progress update: Total data: 9,7MB / 10,1MB - Total rows: 30.391 / 31.358
+[2019-12-17 18:38:39.791920] [INFO] New table is started: wp_wfstatus and setting new default rows per sync: 500
+[2019-12-17 18:38:39.806147] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfstatus` where `id` > 0 order by `id`  limit 500
+[2019-12-17 18:38:40.854045] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:40.865521] [DEBUG] Lastrun in : 1.0651860237122 seconds - rows throttle: 525 and remaining time: 9.9664869308472
+[2019-12-17 18:38:40.874870] [INFO] Database progress update: Total data: 9,9MB / 10,1MB - Total rows: 30.891 / 31.358
+[2019-12-17 18:38:40.902987] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wfstatus` where `id` > 3560 order by `id`  limit 525
+[2019-12-17 18:38:40.912863] [INFO] Marking table: wp_wfstatus as completed
+[2019-12-17 18:38:42.153938] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:42.164672] [DEBUG] Lastrun in : 1.2637801170349 seconds - rows throttle: 552 and remaining time: 8.6673390865326
+[2019-12-17 18:38:42.175276] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.342 / 31.358
+[2019-12-17 18:38:42.196392] [INFO] New table is started: wp_wftrafficrates and setting new default rows per sync: 20
+[2019-12-17 18:38:42.204234] [DEBUG] Getting data from local DB with SQL query: select * from `wp_wftrafficrates` where `eMin` > 0 order by `eMin`  limit 20
+[2019-12-17 18:38:42.212090] [INFO] Marking table: wp_wftrafficrates as completed
+[2019-12-17 18:38:42.218515] [DEBUG] Lastrun in : 0.015546083450317 seconds - rows throttle: 21 and remaining time: 8.6134939193726
+[2019-12-17 18:38:42.226777] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.342 / 31.358
+[2019-12-17 18:38:42.247230] [INFO] New table is started: wp_woocommerce_api_keys and setting new default rows per sync: 500
+[2019-12-17 18:38:42.255087] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_api_keys` where `key_id` > 0 order by `key_id`  limit 500
+[2019-12-17 18:38:42.262360] [INFO] Marking table: wp_woocommerce_api_keys as completed
+[2019-12-17 18:38:42.268780] [DEBUG] Lastrun in : 0.014948129653931 seconds - rows throttle: 525 and remaining time: 8.5632290840149
+[2019-12-17 18:38:42.276985] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.342 / 31.358
+[2019-12-17 18:38:42.298226] [INFO] New table is started: wp_woocommerce_attribute_taxonomies and setting new default rows per sync: 500
+[2019-12-17 18:38:42.306156] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_attribute_taxonomies` where `attribute_id` > 0 order by `attribute_id`  limit 500
+[2019-12-17 18:38:42.312864] [INFO] Marking table: wp_woocommerce_attribute_taxonomies as completed
+[2019-12-17 18:38:42.319105] [DEBUG] Lastrun in : 0.014117956161499 seconds - rows throttle: 525 and remaining time: 8.5129039287567
+[2019-12-17 18:38:42.326792] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.342 / 31.358
+[2019-12-17 18:38:42.350755] [INFO] New table is started: wp_woocommerce_downloadable_product_permissions and setting new default rows per sync: 500
+[2019-12-17 18:38:42.372782] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_downloadable_product_permissions` where `permission_id` > 0 order by `permission_id`  limit 500
+[2019-12-17 18:38:42.381203] [INFO] Marking table: wp_woocommerce_downloadable_product_permissions as completed
+[2019-12-17 18:38:42.394704] [DEBUG] Lastrun in : 0.026679039001465 seconds - rows throttle: 525 and remaining time: 8.4373080730438
+[2019-12-17 18:38:42.406807] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.342 / 31.358
+[2019-12-17 18:38:42.430625] [INFO] New table is started: wp_woocommerce_log and setting new default rows per sync: 500
+[2019-12-17 18:38:42.445285] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_log` where `log_id` > 0 order by `log_id`  limit 500
+[2019-12-17 18:38:42.452387] [INFO] Marking table: wp_woocommerce_log as completed
+[2019-12-17 18:38:42.459870] [DEBUG] Lastrun in : 0.015749931335449 seconds - rows throttle: 525 and remaining time: 8.3721389770508
+[2019-12-17 18:38:42.466367] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.342 / 31.358
+[2019-12-17 18:38:42.499666] [INFO] New table is started: wp_woocommerce_order_itemmeta and setting new default rows per sync: 500
+[2019-12-17 18:38:42.508704] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_order_itemmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2019-12-17 18:38:42.515152] [INFO] Marking table: wp_woocommerce_order_itemmeta as completed
+[2019-12-17 18:38:43.431458] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:43.439698] [DEBUG] Lastrun in : 0.9321460723877 seconds - rows throttle: 525 and remaining time: 7.39231300354
+[2019-12-17 18:38:43.448973] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.351 / 31.358
+[2019-12-17 18:38:43.476884] [INFO] New table is started: wp_woocommerce_order_items and setting new default rows per sync: 500
+[2019-12-17 18:38:43.495690] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_order_items` where `order_item_id` > 0 order by `order_item_id`  limit 500
+[2019-12-17 18:38:43.502245] [INFO] Marking table: wp_woocommerce_order_items as completed
+[2019-12-17 18:38:44.598064] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:44.607519] [DEBUG] Lastrun in : 1.11305809021 seconds - rows throttle: 525 and remaining time: 6.2244899272919
+[2019-12-17 18:38:44.613898] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.352 / 31.358
+[2019-12-17 18:38:44.642146] [INFO] New table is started: wp_woocommerce_payment_tokenmeta and setting new default rows per sync: 500
+[2019-12-17 18:38:44.649913] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_payment_tokenmeta` where `meta_id` > 0 order by `meta_id`  limit 500
+[2019-12-17 18:38:44.657557] [INFO] Marking table: wp_woocommerce_payment_tokenmeta as completed
+[2019-12-17 18:38:44.664773] [DEBUG] Lastrun in : 0.016267061233521 seconds - rows throttle: 525 and remaining time: 6.1672351360321
+[2019-12-17 18:38:44.671580] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.352 / 31.358
+[2019-12-17 18:38:44.690614] [INFO] New table is started: wp_woocommerce_payment_tokens and setting new default rows per sync: 500
+[2019-12-17 18:38:44.698430] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_payment_tokens` where `token_id` > 0 order by `token_id`  limit 500
+[2019-12-17 18:38:44.705766] [INFO] Marking table: wp_woocommerce_payment_tokens as completed
+[2019-12-17 18:38:44.712574] [DEBUG] Lastrun in : 0.015552043914795 seconds - rows throttle: 525 and remaining time: 6.1194350719452
+[2019-12-17 18:38:44.719373] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.352 / 31.358
+[2019-12-17 18:38:44.740480] [INFO] New table is started: wp_woocommerce_sessions and setting new default rows per sync: 61
+[2019-12-17 18:38:44.748035] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_sessions` where `session_id` > 0 order by `session_id`  limit 61
+[2019-12-17 18:38:44.754939] [INFO] Marking table: wp_woocommerce_sessions as completed
+[2019-12-17 18:38:45.766865] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:45.776356] [DEBUG] Lastrun in : 1.0295009613037 seconds - rows throttle: 65 and remaining time: 5.0556519031525
+[2019-12-17 18:38:45.783946] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.354 / 31.358
+[2019-12-17 18:38:45.810062] [INFO] New table is started: wp_woocommerce_shipping_zone_locations and setting new default rows per sync: 500
+[2019-12-17 18:38:45.820559] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_shipping_zone_locations` where `location_id` > 0 order by `location_id`  limit 500
+[2019-12-17 18:38:45.828987] [INFO] Marking table: wp_woocommerce_shipping_zone_locations as completed
+[2019-12-17 18:38:46.660754] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:46.679331] [DEBUG] Lastrun in : 0.86013197898865 seconds - rows throttle: 525 and remaining time: 4.1526811122894
+[2019-12-17 18:38:46.688537] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.355 / 31.358
+[2019-12-17 18:38:46.708525] [INFO] New table is started: wp_woocommerce_shipping_zone_methods and setting new default rows per sync: 122
+[2019-12-17 18:38:46.716448] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_shipping_zone_methods` where `instance_id` > 0 order by `instance_id`  limit 122
+[2019-12-17 18:38:46.724423] [INFO] Marking table: wp_woocommerce_shipping_zone_methods as completed
+[2019-12-17 18:38:47.577466] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:47.598843] [DEBUG] Lastrun in : 0.88378500938416 seconds - rows throttle: 129 and remaining time: 3.2331750392914
+[2019-12-17 18:38:47.616821] [INFO] Database progress update: Total data: 10,0MB / 10,1MB - Total rows: 31.357 / 31.358
+[2019-12-17 18:38:47.641878] [INFO] New table is started: wp_woocommerce_shipping_zones and setting new default rows per sync: 500
+[2019-12-17 18:38:47.649616] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_shipping_zones` where `zone_id` > 0 order by `zone_id`  limit 500
+[2019-12-17 18:38:47.656867] [INFO] Marking table: wp_woocommerce_shipping_zones as completed
+[2019-12-17 18:38:48.455075] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:48.463149] [DEBUG] Lastrun in : 0.81501889228821 seconds - rows throttle: 525 and remaining time: 2.3688609600067
+[2019-12-17 18:38:48.470375] [INFO] Database progress update: 
+[2019-12-17 18:38:48.499645] [INFO] New table is started: wp_woocommerce_tax_rate_locations and setting new default rows per sync: 500
+[2019-12-17 18:38:48.507972] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_tax_rate_locations` where `location_id` > 0 order by `location_id`  limit 500
+[2019-12-17 18:38:48.514506] [INFO] Marking table: wp_woocommerce_tax_rate_locations as completed
+[2019-12-17 18:38:48.522002] [DEBUG] Lastrun in : 0.015340089797974 seconds - rows throttle: 525 and remaining time: 2.3100070953369
+[2019-12-17 18:38:48.528551] [INFO] Database progress update: 
+[2019-12-17 18:38:48.550718] [INFO] New table is started: wp_woocommerce_tax_rates and setting new default rows per sync: 500
+[2019-12-17 18:38:48.559092] [DEBUG] Getting data from local DB with SQL query: select * from `wp_woocommerce_tax_rates` where `tax_rate_id` > 0 order by `tax_rate_id`  limit 500
+[2019-12-17 18:38:48.565610] [INFO] Marking table: wp_woocommerce_tax_rates as completed
+[2019-12-17 18:38:48.573879] [DEBUG] Lastrun in : 0.015833139419556 seconds - rows throttle: 525 and remaining time: 2.2581300735474
+[2019-12-17 18:38:48.580297] [INFO] Database progress update: 
+[2019-12-17 18:38:48.601648] [INFO] Database progress update: 
+[2019-12-17 18:38:48.613146] [INFO] Ending database synchronization loop with remaining time: 2.2188749313354 seconds
+[2019-12-17 18:38:48.638983] [INFO] Ending sync controller loop - with remaining time: 2.1930320262909
+[2019-12-17 18:38:48.979316] [INFO] Running sync controller loop - With allotted time: 26.675699949265 seconds
+[2019-12-17 18:38:49.011525] [INFO] Ending sync controller loop - with remaining time: 26.643486976624
+[2019-12-17 18:38:49.379696] [INFO] Running sync controller loop - With allotted time: 26.649332046509 seconds
+[2019-12-17 18:38:49.386975] [INFO] Starting finalize - Remaining time: 26.642038106918
+[2019-12-17 18:38:49.398623] [INFO] Starting database finalize with remaining time: 26.63040804863
+[2019-12-17 18:38:49.407344] [INFO] Add sql statement to delete WP Synchro options: delete from `wpsyntmp_5df920009fb7f`  where option_name like 'wpsynchro_%'
+[2019-12-17 18:38:49.414185] [INFO] Add sql statement to copy current WP Synchro options to temp table: insert into `wpsyntmp_5df920009fb7f` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+[2019-12-17 18:38:49.422369] [INFO] Add sql statement to delete active plugin setting: delete from `wpsyntmp_5df920009fb7f`  where option_name = 'active_plugins'
+[2019-12-17 18:38:49.428860] [INFO] Add sql statement to copy current active plugin setting to temp table: insert into `wpsyntmp_5df920009fb7f` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+[2019-12-17 18:38:49.436062] [DEBUG] Retrieving new masterdata from target
+[2019-12-17 18:38:49.443205] [DEBUG] Calling masterdata service on: http://rodin.armix.com.ar/wp-json/wpsynchro/v1/masterdata/?type[]=dbdetails&transport=1 with intent to user as 'to'
+[2019-12-17 18:38:50.610913] [DEBUG] Retrieving new masterdata completed
+[2019-12-17 18:38:50.617892] [DEBUG] Add drop table in database on wp_commentmeta
+[2019-12-17 18:38:50.625992] [DEBUG] Add rename in database from wpsyntmp_5df920009f947 to: wp_commentmeta
+[2019-12-17 18:38:50.634734] [DEBUG] Add drop table in database on wp_comments
+[2019-12-17 18:38:50.643950] [DEBUG] Add rename in database from wpsyntmp_5df920009fa1a to: wp_comments
+[2019-12-17 18:38:50.650613] [DEBUG] Add drop table in database on wp_db7_forms
+[2019-12-17 18:38:50.658256] [DEBUG] Add rename in database from wpsyntmp_5df920009faa1 to: wp_db7_forms
+[2019-12-17 18:38:50.665039] [DEBUG] Add drop table in database on wp_emtr_email
+[2019-12-17 18:38:50.672952] [DEBUG] Add rename in database from wpsyntmp_5df920009facf to: wp_emtr_email
+[2019-12-17 18:38:50.682127] [DEBUG] Add drop table in database on wp_emtr_track_email_link_click_log
+[2019-12-17 18:38:50.690959] [DEBUG] Add rename in database from wpsyntmp_5df920009faf3 to: wp_emtr_track_email_link_click_log
+[2019-12-17 18:38:50.698236] [DEBUG] Add drop table in database on wp_emtr_track_email_link_master
+[2019-12-17 18:38:50.705974] [DEBUG] Add rename in database from wpsyntmp_5df920009fb14 to: wp_emtr_track_email_link_master
+[2019-12-17 18:38:50.712789] [DEBUG] Add drop table in database on wp_emtr_track_email_open_log
+[2019-12-17 18:38:50.719214] [DEBUG] Add rename in database from wpsyntmp_5df920009fb33 to: wp_emtr_track_email_open_log
+[2019-12-17 18:38:50.727278] [DEBUG] Add drop table in database on wp_links
+[2019-12-17 18:38:50.735675] [DEBUG] Add rename in database from wpsyntmp_5df920009fb55 to: wp_links
+[2019-12-17 18:38:50.743701] [DEBUG] Add drop table in database on wp_options
+[2019-12-17 18:38:50.750167] [DEBUG] Add rename in database from wpsyntmp_5df920009fb7f to: wp_options
+[2019-12-17 18:38:50.757998] [DEBUG] Add drop table in database on wp_postmeta
+[2019-12-17 18:38:50.764458] [DEBUG] Add rename in database from wpsyntmp_5df920009fb9f to: wp_postmeta
+[2019-12-17 18:38:50.771650] [DEBUG] Add drop table in database on wp_posts
+[2019-12-17 18:38:50.778718] [DEBUG] Add rename in database from wpsyntmp_5df920009fbbe to: wp_posts
+[2019-12-17 18:38:50.785316] [DEBUG] Add drop table in database on wp_term_relationships
+[2019-12-17 18:38:50.793765] [DEBUG] Add rename in database from wpsyntmp_5df920009fbf9 to: wp_term_relationships
+[2019-12-17 18:38:50.800279] [DEBUG] Add drop table in database on wp_term_taxonomy
+[2019-12-17 18:38:50.809608] [DEBUG] Add rename in database from wpsyntmp_5df920009fc15 to: wp_term_taxonomy
+[2019-12-17 18:38:50.819854] [DEBUG] Add drop table in database on wp_termmeta
+[2019-12-17 18:38:50.827902] [DEBUG] Add rename in database from wpsyntmp_5df920009fc37 to: wp_termmeta
+[2019-12-17 18:38:50.834462] [DEBUG] Add drop table in database on wp_terms
+[2019-12-17 18:38:50.843017] [DEBUG] Add rename in database from wpsyntmp_5df920009fc55 to: wp_terms
+[2019-12-17 18:38:50.849381] [DEBUG] Add drop table in database on wp_usermeta
+[2019-12-17 18:38:50.857184] [DEBUG] Add rename in database from wpsyntmp_5df920009fc74 to: wp_usermeta
+[2019-12-17 18:38:50.863717] [DEBUG] Add drop table in database on wp_users
+[2019-12-17 18:38:50.870216] [DEBUG] Add rename in database from wpsyntmp_5df920009fc91 to: wp_users
+[2019-12-17 18:38:50.877597] [DEBUG] Add drop table in database on wp_wc_download_log
+[2019-12-17 18:38:50.884081] [DEBUG] Add rename in database from wpsyntmp_5df920009fcb8 to: wp_wc_download_log
+[2019-12-17 18:38:50.892016] [DEBUG] Add drop table in database on wp_wc_product_meta_lookup
+[2019-12-17 18:38:50.898320] [DEBUG] Add rename in database from wpsyntmp_5df920009fce3 to: wp_wc_product_meta_lookup
+[2019-12-17 18:38:50.906096] [DEBUG] Add drop table in database on wp_wc_tax_rate_classes
+[2019-12-17 18:38:50.912761] [DEBUG] Add rename in database from wpsyntmp_5df920009fd12 to: wp_wc_tax_rate_classes
+[2019-12-17 18:38:50.919123] [DEBUG] Add drop table in database on wp_wc_webhooks
+[2019-12-17 18:38:50.927507] [DEBUG] Add rename in database from wpsyntmp_5df920009fd34 to: wp_wc_webhooks
+[2019-12-17 18:38:50.933949] [DEBUG] Add drop table in database on wp_wfblockediplog
+[2019-12-17 18:38:50.941747] [DEBUG] Add rename in database from wpsyntmp_5df920009fd5c to: wp_wfblockediplog
+[2019-12-17 18:38:50.948254] [DEBUG] Add drop table in database on wp_wfblocks7
+[2019-12-17 18:38:50.955979] [DEBUG] Add rename in database from wpsyntmp_5df920009fd7a to: wp_wfblocks7
+[2019-12-17 18:38:50.964904] [DEBUG] Add drop table in database on wp_wfconfig
+[2019-12-17 18:38:50.973195] [DEBUG] Add rename in database from wpsyntmp_5df920009fd9f to: wp_wfconfig
+[2019-12-17 18:38:50.984628] [DEBUG] Add drop table in database on wp_wfcrawlers
+[2019-12-17 18:38:50.995294] [DEBUG] Add rename in database from wpsyntmp_5df920009fdb8 to: wp_wfcrawlers
+[2019-12-17 18:38:51.001796] [DEBUG] Add drop table in database on wp_wffilechanges
+[2019-12-17 18:38:51.011997] [DEBUG] Add rename in database from wpsyntmp_5df920009fdd3 to: wp_wffilechanges
+[2019-12-17 18:38:51.019460] [DEBUG] Add drop table in database on wp_wffilemods
+[2019-12-17 18:38:51.028866] [DEBUG] Add rename in database from wpsyntmp_5df920009fdec to: wp_wffilemods
+[2019-12-17 18:38:51.035264] [DEBUG] Add drop table in database on wp_wfhits
+[2019-12-17 18:38:51.043748] [DEBUG] Add rename in database from wpsyntmp_5df920009fe0b to: wp_wfhits
+[2019-12-17 18:38:51.050149] [DEBUG] Add drop table in database on wp_wfhoover
+[2019-12-17 18:38:51.058875] [DEBUG] Add rename in database from wpsyntmp_5df920009fe37 to: wp_wfhoover
+[2019-12-17 18:38:51.065288] [DEBUG] Add drop table in database on wp_wfissues
+[2019-12-17 18:38:51.073411] [DEBUG] Add rename in database from wpsyntmp_5df920009fe54 to: wp_wfissues
+[2019-12-17 18:38:51.079942] [DEBUG] Add drop table in database on wp_wfknownfilelist
+[2019-12-17 18:38:51.086570] [DEBUG] Add rename in database from wpsyntmp_5df920009fe7c to: wp_wfknownfilelist
+[2019-12-17 18:38:51.094477] [DEBUG] Add drop table in database on wp_wflivetraffichuman
+[2019-12-17 18:38:51.101525] [DEBUG] Add rename in database from wpsyntmp_5df920009fe94 to: wp_wflivetraffichuman
+[2019-12-17 18:38:51.110299] [DEBUG] Add drop table in database on wp_wflocs
+[2019-12-17 18:38:51.117200] [DEBUG] Add rename in database from wpsyntmp_5df920009feb0 to: wp_wflocs
+[2019-12-17 18:38:51.126136] [DEBUG] Add drop table in database on wp_wflogins
+[2019-12-17 18:38:51.132930] [DEBUG] Add rename in database from wpsyntmp_5df920009fecf to: wp_wflogins
+[2019-12-17 18:38:51.141507] [DEBUG] Add drop table in database on wp_wfls_2fa_secrets
+[2019-12-17 18:38:51.147870] [DEBUG] Add rename in database from wpsyntmp_5df920009fef3 to: wp_wfls_2fa_secrets
+[2019-12-17 18:38:51.154921] [DEBUG] Add drop table in database on wp_wfls_settings
+[2019-12-17 18:38:51.161670] [DEBUG] Add rename in database from wpsyntmp_5df920009ff11 to: wp_wfls_settings
+[2019-12-17 18:38:51.167988] [DEBUG] Add drop table in database on wp_wfnotifications
+[2019-12-17 18:38:51.175731] [DEBUG] Add rename in database from wpsyntmp_5df920009ff2a to: wp_wfnotifications
+[2019-12-17 18:38:51.182107] [DEBUG] Add drop table in database on wp_wfpendingissues
+[2019-12-17 18:38:51.189985] [DEBUG] Add rename in database from wpsyntmp_5df920009ff47 to: wp_wfpendingissues
+[2019-12-17 18:38:51.196502] [DEBUG] Add drop table in database on wp_wfreversecache
+[2019-12-17 18:38:51.202877] [DEBUG] Add rename in database from wpsyntmp_5df920009ff6e to: wp_wfreversecache
+[2019-12-17 18:38:51.210370] [DEBUG] Add drop table in database on wp_wfsnipcache
+[2019-12-17 18:38:51.216753] [DEBUG] Add rename in database from wpsyntmp_5df920009ff86 to: wp_wfsnipcache
+[2019-12-17 18:38:51.224831] [DEBUG] Add drop table in database on wp_wfstatus
+[2019-12-17 18:38:51.232214] [DEBUG] Add rename in database from wpsyntmp_5df920009ffa8 to: wp_wfstatus
+[2019-12-17 18:38:51.241261] [DEBUG] Add drop table in database on wp_wftrafficrates
+[2019-12-17 18:38:51.247645] [DEBUG] Add rename in database from wpsyntmp_5df920009ffc7 to: wp_wftrafficrates
+[2019-12-17 18:38:51.255260] [DEBUG] Add drop table in database on wp_woocommerce_api_keys
+[2019-12-17 18:38:51.264972] [DEBUG] Add rename in database from wpsyntmp_5df920009ffe3 to: wp_woocommerce_api_keys
+[2019-12-17 18:38:51.275091] [DEBUG] Add drop table in database on wp_woocommerce_attribute_taxonomies
+[2019-12-17 18:38:51.282018] [DEBUG] Add rename in database from wpsyntmp_5df92000a0006 to: wp_woocommerce_attribute_taxonomies
+[2019-12-17 18:38:51.290674] [DEBUG] Add drop table in database on wp_woocommerce_downloadable_product_permissions
+[2019-12-17 18:38:51.297829] [DEBUG] Add rename in database from wpsyntmp_5df920009fcd0 to: wp_woocommerce_downloadable_product_permissions
+[2019-12-17 18:38:51.305211] [DEBUG] Add drop table in database on wp_woocommerce_log
+[2019-12-17 18:38:51.312711] [DEBUG] Add rename in database from wpsyntmp_5df92000a0052 to: wp_woocommerce_log
+[2019-12-17 18:38:51.324357] [DEBUG] Add drop table in database on wp_woocommerce_order_itemmeta
+[2019-12-17 18:38:51.332510] [DEBUG] Add rename in database from wpsyntmp_5df92000a0070 to: wp_woocommerce_order_itemmeta
+[2019-12-17 18:38:51.340536] [DEBUG] Add drop table in database on wp_woocommerce_order_items
+[2019-12-17 18:38:51.346897] [DEBUG] Add rename in database from wpsyntmp_5df92000a008f to: wp_woocommerce_order_items
+[2019-12-17 18:38:51.353347] [DEBUG] Add drop table in database on wp_woocommerce_payment_tokenmeta
+[2019-12-17 18:38:51.360742] [DEBUG] Add rename in database from wpsyntmp_5df92000a00ab to: wp_woocommerce_payment_tokenmeta
+[2019-12-17 18:38:51.366888] [DEBUG] Add drop table in database on wp_woocommerce_payment_tokens
+[2019-12-17 18:38:51.374524] [DEBUG] Add rename in database from wpsyntmp_5df92000a00c9 to: wp_woocommerce_payment_tokens
+[2019-12-17 18:38:51.380981] [DEBUG] Add drop table in database on wp_woocommerce_sessions
+[2019-12-17 18:38:51.389266] [DEBUG] Add rename in database from wpsyntmp_5df92000a00e7 to: wp_woocommerce_sessions
+[2019-12-17 18:38:51.398055] [DEBUG] Add drop table in database on wp_woocommerce_shipping_zone_locations
+[2019-12-17 18:38:51.406114] [DEBUG] Add rename in database from wpsyntmp_5df92000a0109 to: wp_woocommerce_shipping_zone_locations
+[2019-12-17 18:38:51.412858] [DEBUG] Add drop table in database on wp_woocommerce_shipping_zone_methods
+[2019-12-17 18:38:51.422027] [DEBUG] Add rename in database from wpsyntmp_5df92000a0137 to: wp_woocommerce_shipping_zone_methods
+[2019-12-17 18:38:51.429157] [DEBUG] Add drop table in database on wp_woocommerce_shipping_zones
+[2019-12-17 18:38:51.435647] [DEBUG] Add rename in database from wpsyntmp_5df92000a015f to: wp_woocommerce_shipping_zones
+[2019-12-17 18:38:51.444066] [DEBUG] Add drop table in database on wp_woocommerce_tax_rate_locations
+[2019-12-17 18:38:51.452031] [DEBUG] Add rename in database from wpsyntmp_5df92000a0185 to: wp_woocommerce_tax_rate_locations
+[2019-12-17 18:38:51.462706] [DEBUG] Add drop table in database on wp_woocommerce_tax_rates
+[2019-12-17 18:38:51.473904] [DEBUG] Add rename in database from wpsyntmp_5df92000a01b1 to: wp_woocommerce_tax_rates
+[2019-12-17 18:38:51.495903] [DEBUG] Calling remote client db service with 116 SQL statements
+[2019-12-17 18:38:57.779539] [DEBUG] Got a proper response from 'clientsyncdatabase' with response length: 174
+[2019-12-17 18:38:57.789250] [DEBUG] Retrieving new masterdata from target
+[2019-12-17 18:38:57.795983] [DEBUG] Calling masterdata service on: http://rodin.armix.com.ar/wp-json/wpsynchro/v1/masterdata/?type[]=dbdetails&transport=1 with intent to user as 'to'
+[2019-12-17 18:39:00.101693] [DEBUG] Retrieving new masterdata completed
+[2019-12-17 18:39:00.110721] [DEBUG] No excess temp tables to delete
+[2019-12-17 18:39:00.117424] [DEBUG] Retrieving new masterdata from target
+[2019-12-17 18:39:00.126721] [DEBUG] Calling masterdata service on: http://rodin.armix.com.ar/wp-json/wpsynchro/v1/masterdata/?type[]=dbdetails&transport=1 with intent to user as 'to'
+[2019-12-17 18:39:01.147674] [DEBUG] Retrieving new masterdata completed
+[2019-12-17 18:39:01.184928] [INFO] Ending sync controller loop - with remaining time: 14.844084978104
+[2019-12-17 18:39:01.562248] [INFO] Running sync controller loop - With allotted time: 26.643763065338 seconds
+[2019-12-17 18:39:01.569374] [INFO] Starting finalize - Remaining time: 26.636639118195
+[2019-12-17 18:39:01.576494] [INFO] Completed finalize - remaining time: 26.629525184631
+[2019-12-17 18:39:01.604587] [INFO] Ending sync controller loop - with remaining time: 26.601428031921

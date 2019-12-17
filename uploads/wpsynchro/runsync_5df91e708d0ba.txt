@@ -132,3 +132,187 @@
 [2019-12-17 18:30:23.077581] [INFO] Database progress update: Total data: 1,3MB / 9,1MB - Total rows: 4.512 / 31.354
 [2019-12-17 18:30:24.026278] [INFO] Database progress update: Total data: 1,3MB / 9,1MB - Total rows: 4.578 / 31.354
 [2019-12-17 18:30:25.025904] [INFO] Database progress update: Total data: 1,3MB / 9,1MB - Total rows: 4.648 / 31.354
+[2019-12-17 18:30:26.135044] [INFO] Database progress update: Total data: 1,4MB / 9,1MB - Total rows: 4.722 / 31.354
+[2019-12-17 18:30:27.230422] [INFO] Database progress update: Total data: 1,4MB / 9,1MB - Total rows: 4.800 / 31.354
+[2019-12-17 18:30:30.052817] [INFO] Database progress update: Total data: 1,4MB / 9,1MB - Total rows: 4.882 / 31.354
+[2019-12-17 18:30:30.080939] [INFO] Ending database synchronization loop with remaining time: 0 seconds
+[2019-12-17 18:30:30.106281] [INFO] Ending sync controller loop - with remaining time: 0
+[2019-12-17 18:30:30.472674] [INFO] Running sync controller loop - With allotted time: 26.655338048935 seconds
+[2019-12-17 18:30:30.485920] [INFO] Starting database synchronization loop with remaining time: 26.642095088959
+[2019-12-17 18:30:31.542513] [INFO] Database progress update: Total data: 1,4MB / 9,1MB - Total rows: 4.969 / 31.354
+[2019-12-17 18:30:32.540985] [INFO] Database progress update: Total data: 1,5MB / 9,1MB - Total rows: 5.061 / 31.354
+[2019-12-17 18:30:33.532452] [INFO] Database progress update: Total data: 1,5MB / 9,1MB - Total rows: 5.158 / 31.354
+[2019-12-17 18:30:34.595855] [INFO] Database progress update: Total data: 1,5MB / 9,1MB - Total rows: 5.260 / 31.354
+[2019-12-17 18:30:35.640038] [INFO] Database progress update: Total data: 1,5MB / 9,1MB - Total rows: 5.368 / 31.354
+[2019-12-17 18:30:36.776867] [INFO] Database progress update: Total data: 1,5MB / 9,1MB - Total rows: 5.482 / 31.354
+[2019-12-17 18:30:39.592261] [INFO] Database progress update: Total data: 1,5MB / 9,1MB - Total rows: 5.602 / 31.354
+[2019-12-17 18:30:40.599431] [INFO] Database progress update: Total data: 1,6MB / 9,1MB - Total rows: 5.728 / 31.354
+[2019-12-17 18:30:41.691575] [INFO] Database progress update: Total data: 1,6MB / 9,1MB - Total rows: 5.861 / 31.354
+[2019-12-17 18:30:42.835965] [INFO] Database progress update: Total data: 1,7MB / 9,1MB - Total rows: 6.001 / 31.354
+[2019-12-17 18:30:44.039798] [INFO] Database progress update: Total data: 1,7MB / 9,1MB - Total rows: 6.148 / 31.354
+[2019-12-17 18:30:45.222835] [INFO] Database progress update: Total data: 1,8MB / 9,1MB - Total rows: 6.303 / 31.354
+[2019-12-17 18:30:46.548282] [INFO] Database progress update: Total data: 1,8MB / 9,1MB - Total rows: 6.466 / 31.354
+[2019-12-17 18:30:48.953608] [INFO] Database progress update: Total data: 1,9MB / 9,1MB - Total rows: 6.638 / 31.354
+[2019-12-17 18:30:50.239701] [INFO] Database progress update: Total data: 1,9MB / 9,1MB - Total rows: 6.819 / 31.354
+[2019-12-17 18:30:51.492365] [INFO] Database progress update: Total data: 2,0MB / 9,1MB - Total rows: 7.010 / 31.354
+[2019-12-17 18:30:52.635466] [INFO] Database progress update: Total data: 2,0MB / 9,1MB - Total rows: 7.211 / 31.354
+[2019-12-17 18:30:53.878877] [INFO] Database progress update: Total data: 2,1MB / 9,1MB - Total rows: 7.423 / 31.354
+[2019-12-17 18:30:55.126400] [INFO] Database progress update: Total data: 2,2MB / 9,1MB - Total rows: 7.646 / 31.354
+[2019-12-17 18:30:56.333084] [INFO] Database progress update: Total data: 2,3MB / 9,1MB - Total rows: 7.881 / 31.354
+[2019-12-17 18:30:56.374631] [INFO] Ending database synchronization loop with remaining time: 0.7533860206604 seconds
+[2019-12-17 18:30:56.403235] [INFO] Ending sync controller loop - with remaining time: 0.72477793693542
+[2019-12-17 18:30:56.817179] [INFO] Running sync controller loop - With allotted time: 26.60683298111 seconds
+[2019-12-17 18:30:56.827856] [INFO] Starting database synchronization loop with remaining time: 26.596154928207
+[2019-12-17 18:30:58.027737] [INFO] Database progress update: Total data: 2,3MB / 9,1MB - Total rows: 8.128 / 31.354
+[2019-12-17 18:30:59.298434] [INFO] Database progress update: Total data: 2,4MB / 9,1MB - Total rows: 8.388 / 31.354
+[2019-12-17 18:31:00.583947] [INFO] Database progress update: Total data: 2,5MB / 9,1MB - Total rows: 8.661 / 31.354
+[2019-12-17 18:31:02.116974] [INFO] Database progress update: Total data: 2,5MB / 9,1MB - Total rows: 8.948 / 31.354
+[2019-12-17 18:31:03.563439] [INFO] Database progress update: Total data: 2,6MB / 9,1MB - Total rows: 9.250 / 31.354
+[2019-12-17 18:31:04.949107] [INFO] Database progress update: Total data: 2,7MB / 9,1MB - Total rows: 9.568 / 31.354
+[2019-12-17 18:31:06.536638] [INFO] Database progress update: Total data: 2,8MB / 9,1MB - Total rows: 9.902 / 31.354
+[2019-12-17 18:31:08.265718] [INFO] Database progress update: Total data: 2,9MB / 9,1MB - Total rows: 10.253 / 31.354
+[2019-12-17 18:31:09.964923] [INFO] Database progress update: Total data: 3,0MB / 9,1MB - Total rows: 10.622 / 31.354
+[2019-12-17 18:31:11.393092] [INFO] Database progress update: Total data: 3,2MB / 9,1MB - Total rows: 11.010 / 31.354
+[2019-12-17 18:31:12.671654] [INFO] Database progress update: Total data: 3,3MB / 9,1MB - Total rows: 11.418 / 31.354
+[2019-12-17 18:31:13.980056] [INFO] Database progress update: Total data: 3,4MB / 9,1MB - Total rows: 11.847 / 31.354
+[2019-12-17 18:31:16.017766] [INFO] Database progress update: Total data: 3,5MB / 9,1MB - Total rows: 12.298 / 31.354
+[2019-12-17 18:31:18.361335] [INFO] Database progress update: Total data: 3,6MB / 9,1MB - Total rows: 12.772 / 31.354
+[2019-12-17 18:31:19.949792] [INFO] Database progress update: Total data: 3,8MB / 9,1MB - Total rows: 13.270 / 31.354
+[2019-12-17 18:31:21.499926] [INFO] Database progress update: Total data: 3,9MB / 9,1MB - Total rows: 13.793 / 31.354
+[2019-12-17 18:31:21.536269] [INFO] Ending database synchronization loop with remaining time: 1.8878040313721 seconds
+[2019-12-17 18:31:21.565212] [INFO] Ending sync controller loop - with remaining time: 1.8587999343872
+[2019-12-17 18:31:22.247390] [INFO] Running sync controller loop - With allotted time: 26.340621948242 seconds
+[2019-12-17 18:31:22.259271] [INFO] Starting database synchronization loop with remaining time: 26.328740119934
+[2019-12-17 18:31:25.031557] [INFO] Database progress update: Total data: 4,1MB / 9,1MB - Total rows: 14.343 / 31.354
+[2019-12-17 18:31:27.150091] [INFO] Database progress update: Total data: 4,3MB / 9,1MB - Total rows: 14.921 / 31.354
+[2019-12-17 18:31:29.042761] [INFO] Database progress update: Total data: 4,5MB / 9,1MB - Total rows: 15.528 / 31.354
+[2019-12-17 18:31:30.954747] [INFO] Database progress update: Total data: 4,6MB / 9,1MB - Total rows: 16.166 / 31.354
+[2019-12-17 18:31:32.775537] [INFO] Database progress update: Total data: 4,8MB / 9,1MB - Total rows: 16.836 / 31.354
+[2019-12-17 18:31:32.836100] [INFO] Marking table: wp_wffilemods as completed
+[2019-12-17 18:31:34.082301] [INFO] Database progress update: Total data: 4,9MB / 9,1MB - Total rows: 17.068 / 31.354
+[2019-12-17 18:31:34.133191] [INFO] New table is started: wp_wfhits and setting new default rows per sync: 20
+[2019-12-17 18:31:34.140435] [INFO] Marking table: wp_wfhits as completed
+[2019-12-17 18:31:35.097024] [INFO] Database progress update: Total data: 4,9MB / 9,1MB - Total rows: 17.072 / 31.354
+[2019-12-17 18:31:35.123650] [INFO] New table is started: wp_wfhoover and setting new default rows per sync: 20
+[2019-12-17 18:31:35.131629] [INFO] Marking table: wp_wfhoover as completed
+[2019-12-17 18:31:35.138712] [INFO] Database progress update: Total data: 4,9MB / 9,1MB - Total rows: 17.072 / 31.354
+[2019-12-17 18:31:35.162018] [INFO] New table is started: wp_wfissues and setting new default rows per sync: 122
+[2019-12-17 18:31:35.170434] [INFO] Marking table: wp_wfissues as completed
+[2019-12-17 18:31:36.056947] [INFO] Database progress update: Total data: 4,9MB / 9,1MB - Total rows: 17.073 / 31.354
+[2019-12-17 18:31:36.091418] [INFO] New table is started: wp_wfknownfilelist and setting new default rows per sync: 500
+[2019-12-17 18:31:37.101593] [INFO] Database progress update: Total data: 5,1MB / 9,1MB - Total rows: 17.573 / 31.354
+[2019-12-17 18:31:38.106320] [INFO] Database progress update: Total data: 5,2MB / 9,1MB - Total rows: 18.098 / 31.354
+[2019-12-17 18:31:39.263683] [INFO] Database progress update: Total data: 5,4MB / 9,1MB - Total rows: 18.650 / 31.354
+[2019-12-17 18:31:40.313106] [INFO] Database progress update: Total data: 5,5MB / 9,1MB - Total rows: 19.230 / 31.354
+[2019-12-17 18:31:41.385447] [INFO] Database progress update: Total data: 5,7MB / 9,1MB - Total rows: 19.839 / 31.354
+[2019-12-17 18:31:42.435863] [INFO] Database progress update: Total data: 5,9MB / 9,1MB - Total rows: 20.479 / 31.354
+[2019-12-17 18:31:43.992168] [INFO] Database progress update: Total data: 6,1MB / 9,1MB - Total rows: 21.151 / 31.354
+[2019-12-17 18:31:44.994375] [INFO] Database progress update: Total data: 6,3MB / 9,1MB - Total rows: 21.857 / 31.354
+[2019-12-17 18:31:46.229687] [INFO] Database progress update: Total data: 6,5MB / 9,1MB - Total rows: 22.599 / 31.354
+[2019-12-17 18:31:49.235210] [INFO] Database progress update: Total data: 6,7MB / 9,1MB - Total rows: 23.379 / 31.354
+[2019-12-17 18:31:49.264137] [INFO] Ending database synchronization loop with remaining time: 0 seconds
+[2019-12-17 18:31:49.292026] [INFO] Ending sync controller loop - with remaining time: 0
+[2019-12-17 18:31:49.669057] [INFO] Running sync controller loop - With allotted time: 26.643012046814 seconds
+[2019-12-17 18:31:49.676432] [INFO] Starting database synchronization loop with remaining time: 26.635579109192
+[2019-12-17 18:31:50.801497] [INFO] Database progress update: Total data: 7,0MB / 9,1MB - Total rows: 24.198 / 31.354
+[2019-12-17 18:31:51.887984] [INFO] Database progress update: Total data: 7,2MB / 9,1MB - Total rows: 25.058 / 31.354
+[2019-12-17 18:31:52.889869] [INFO] Database progress update: Total data: 7,5MB / 9,1MB - Total rows: 25.961 / 31.354
+[2019-12-17 18:31:53.948266] [INFO] Database progress update: Total data: 7,7MB / 9,1MB - Total rows: 26.910 / 31.354
+[2019-12-17 18:31:55.111585] [INFO] Database progress update: Total data: 8,1MB / 9,1MB - Total rows: 27.907 / 31.354
+[2019-12-17 18:31:56.916959] [INFO] Database progress update: Total data: 8,4MB / 9,1MB - Total rows: 28.954 / 31.354
+[2019-12-17 18:31:59.135084] [INFO] Database progress update: Total data: 8,6MB / 9,1MB - Total rows: 30.054 / 31.354
+[2019-12-17 18:31:59.178191] [INFO] Marking table: wp_wfknownfilelist as completed
+[2019-12-17 18:32:00.256739] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.361 / 31.354
+[2019-12-17 18:32:00.280929] [INFO] New table is started: wp_wflivetraffichuman and setting new default rows per sync: 20
+[2019-12-17 18:32:00.288615] [INFO] Marking table: wp_wflivetraffichuman as completed
+[2019-12-17 18:32:00.294889] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.361 / 31.354
+[2019-12-17 18:32:00.314140] [INFO] New table is started: wp_wflocs and setting new default rows per sync: 20
+[2019-12-17 18:32:00.321673] [INFO] Marking table: wp_wflocs as completed
+[2019-12-17 18:32:00.327724] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.361 / 31.354
+[2019-12-17 18:32:00.346323] [INFO] New table is started: wp_wflogins and setting new default rows per sync: 20
+[2019-12-17 18:32:00.353924] [INFO] Marking table: wp_wflogins as completed
+[2019-12-17 18:32:01.310159] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.365 / 31.354
+[2019-12-17 18:32:01.336035] [INFO] New table is started: wp_wfls_2fa_secrets and setting new default rows per sync: 20
+[2019-12-17 18:32:01.343282] [INFO] Marking table: wp_wfls_2fa_secrets as completed
+[2019-12-17 18:32:01.350238] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.365 / 31.354
+[2019-12-17 18:32:01.371439] [INFO] New table is started: wp_wfls_settings and setting new default rows per sync: 20
+[2019-12-17 18:32:01.381113] [INFO] Marking table: wp_wfls_settings as completed
+[2019-12-17 18:32:03.050161] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.384 / 31.354
+[2019-12-17 18:32:03.090488] [INFO] New table is started: wp_wfnotifications and setting new default rows per sync: 122
+[2019-12-17 18:32:03.099007] [INFO] Marking table: wp_wfnotifications as completed
+[2019-12-17 18:32:04.091620] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.387 / 31.354
+[2019-12-17 18:32:04.120272] [INFO] New table is started: wp_wfpendingissues and setting new default rows per sync: 500
+[2019-12-17 18:32:04.130870] [INFO] Marking table: wp_wfpendingissues as completed
+[2019-12-17 18:32:04.137839] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.387 / 31.354
+[2019-12-17 18:32:04.160385] [INFO] New table is started: wp_wfreversecache and setting new default rows per sync: 20
+[2019-12-17 18:32:04.169688] [INFO] Marking table: wp_wfreversecache as completed
+[2019-12-17 18:32:04.175756] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.387 / 31.354
+[2019-12-17 18:32:04.195990] [INFO] New table is started: wp_wfsnipcache and setting new default rows per sync: 500
+[2019-12-17 18:32:04.205587] [INFO] Marking table: wp_wfsnipcache as completed
+[2019-12-17 18:32:04.212061] [INFO] Database progress update: Total data: 8,7MB / 9,1MB - Total rows: 30.387 / 31.354
+[2019-12-17 18:32:04.232484] [INFO] New table is started: wp_wfstatus and setting new default rows per sync: 500
+[2019-12-17 18:32:05.348587] [INFO] Database progress update: Total data: 8,9MB / 9,1MB - Total rows: 30.887 / 31.354
+[2019-12-17 18:32:05.381597] [INFO] Marking table: wp_wfstatus as completed
+[2019-12-17 18:32:06.396737] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.338 / 31.354
+[2019-12-17 18:32:06.423149] [INFO] New table is started: wp_wftrafficrates and setting new default rows per sync: 20
+[2019-12-17 18:32:06.431344] [INFO] Marking table: wp_wftrafficrates as completed
+[2019-12-17 18:32:06.438097] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.338 / 31.354
+[2019-12-17 18:32:06.457362] [INFO] New table is started: wp_woocommerce_api_keys and setting new default rows per sync: 500
+[2019-12-17 18:32:06.464998] [INFO] Marking table: wp_woocommerce_api_keys as completed
+[2019-12-17 18:32:06.471138] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.338 / 31.354
+[2019-12-17 18:32:06.501426] [INFO] New table is started: wp_woocommerce_attribute_taxonomies and setting new default rows per sync: 500
+[2019-12-17 18:32:06.512155] [INFO] Marking table: wp_woocommerce_attribute_taxonomies as completed
+[2019-12-17 18:32:06.518192] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.338 / 31.354
+[2019-12-17 18:32:06.538758] [INFO] New table is started: wp_woocommerce_downloadable_product_permissions and setting new default rows per sync: 500
+[2019-12-17 18:32:06.546432] [INFO] Marking table: wp_woocommerce_downloadable_product_permissions as completed
+[2019-12-17 18:32:06.552786] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.338 / 31.354
+[2019-12-17 18:32:06.580549] [INFO] New table is started: wp_woocommerce_log and setting new default rows per sync: 500
+[2019-12-17 18:32:06.588273] [INFO] Marking table: wp_woocommerce_log as completed
+[2019-12-17 18:32:06.594467] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.338 / 31.354
+[2019-12-17 18:32:06.622811] [INFO] New table is started: wp_woocommerce_order_itemmeta and setting new default rows per sync: 500
+[2019-12-17 18:32:06.630098] [INFO] Marking table: wp_woocommerce_order_itemmeta as completed
+[2019-12-17 18:32:07.528834] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.347 / 31.354
+[2019-12-17 18:32:07.551259] [INFO] New table is started: wp_woocommerce_order_items and setting new default rows per sync: 500
+[2019-12-17 18:32:07.561154] [INFO] Marking table: wp_woocommerce_order_items as completed
+[2019-12-17 18:32:08.567728] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.348 / 31.354
+[2019-12-17 18:32:08.593163] [INFO] New table is started: wp_woocommerce_payment_tokenmeta and setting new default rows per sync: 500
+[2019-12-17 18:32:08.600604] [INFO] Marking table: wp_woocommerce_payment_tokenmeta as completed
+[2019-12-17 18:32:08.606584] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.348 / 31.354
+[2019-12-17 18:32:08.626715] [INFO] New table is started: wp_woocommerce_payment_tokens and setting new default rows per sync: 500
+[2019-12-17 18:32:08.634142] [INFO] Marking table: wp_woocommerce_payment_tokens as completed
+[2019-12-17 18:32:08.640181] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.348 / 31.354
+[2019-12-17 18:32:08.658087] [INFO] New table is started: wp_woocommerce_sessions and setting new default rows per sync: 61
+[2019-12-17 18:32:08.664739] [INFO] Marking table: wp_woocommerce_sessions as completed
+[2019-12-17 18:32:09.892798] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.350 / 31.354
+[2019-12-17 18:32:09.933943] [INFO] New table is started: wp_woocommerce_shipping_zone_locations and setting new default rows per sync: 500
+[2019-12-17 18:32:09.942392] [INFO] Marking table: wp_woocommerce_shipping_zone_locations as completed
+[2019-12-17 18:32:10.799733] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.351 / 31.354
+[2019-12-17 18:32:10.827942] [INFO] New table is started: wp_woocommerce_shipping_zone_methods and setting new default rows per sync: 122
+[2019-12-17 18:32:10.841598] [INFO] Marking table: wp_woocommerce_shipping_zone_methods as completed
+[2019-12-17 18:32:11.708132] [INFO] Database progress update: Total data: 9,0MB / 9,1MB - Total rows: 31.353 / 31.354
+[2019-12-17 18:32:11.738843] [INFO] New table is started: wp_woocommerce_shipping_zones and setting new default rows per sync: 500
+[2019-12-17 18:32:11.746500] [INFO] Marking table: wp_woocommerce_shipping_zones as completed
+[2019-12-17 18:32:12.616925] [INFO] Database progress update: 
+[2019-12-17 18:32:12.642400] [INFO] New table is started: wp_woocommerce_tax_rate_locations and setting new default rows per sync: 500
+[2019-12-17 18:32:12.650666] [INFO] Marking table: wp_woocommerce_tax_rate_locations as completed
+[2019-12-17 18:32:12.656805] [INFO] Database progress update: 
+[2019-12-17 18:32:12.675213] [INFO] New table is started: wp_woocommerce_tax_rates and setting new default rows per sync: 500
+[2019-12-17 18:32:12.682881] [INFO] Marking table: wp_woocommerce_tax_rates as completed
+[2019-12-17 18:32:12.688999] [INFO] Database progress update: 
+[2019-12-17 18:32:12.707628] [INFO] Database progress update: 
+[2019-12-17 18:32:12.713841] [INFO] Ending database synchronization loop with remaining time: 3.5981750488281 seconds
+[2019-12-17 18:32:12.732831] [INFO] Ending sync controller loop - with remaining time: 3.5791821479797
+[2019-12-17 18:32:13.113354] [INFO] Running sync controller loop - With allotted time: 26.637657880783 seconds
+[2019-12-17 18:32:13.132169] [INFO] Ending sync controller loop - with remaining time: 26.618844032288
+[2019-12-17 18:32:13.454885] [INFO] Running sync controller loop - With allotted time: 26.691124916077 seconds
+[2019-12-17 18:32:13.461908] [INFO] Starting finalize - Remaining time: 26.684103965759
+[2019-12-17 18:32:13.471642] [INFO] Starting database finalize with remaining time: 26.674368858337
+[2019-12-17 18:32:13.479256] [INFO] Add sql statement to delete WP Synchro options: delete from `wpsyntmp_5df91e7760452`  where option_name like 'wpsynchro_%'
+[2019-12-17 18:32:13.495035] [INFO] Add sql statement to copy current WP Synchro options to temp table: insert into `wpsyntmp_5df91e7760452` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name like 'wpsynchro_%'
+[2019-12-17 18:32:13.502356] [INFO] Add sql statement to delete active plugin setting: delete from `wpsyntmp_5df91e7760452`  where option_name = 'active_plugins'
+[2019-12-17 18:32:13.509828] [INFO] Add sql statement to copy current active plugin setting to temp table: insert into `wpsyntmp_5df91e7760452` (option_name,option_value,autoload) select option_name,option_value,autoload from wp_options where option_name = 'active_plugins'
+[2019-12-17 18:32:22.529503] [INFO] Ending sync controller loop - with remaining time: 17.616508960724
+[2019-12-17 18:32:22.919715] [INFO] Running sync controller loop - With allotted time: 26.629297018051 seconds
+[2019-12-17 18:32:22.928579] [INFO] Starting finalize - Remaining time: 26.620434045792
+[2019-12-17 18:32:22.934917] [INFO] Completed finalize - remaining time: 26.614098072052
+[2019-12-17 18:32:22.962446] [INFO] Ending sync controller loop - with remaining time: 26.5865650177
