@@ -135,7 +135,7 @@ class Social_Links {
 					'page_title' => 'Redes Sociales',
 					'menu_title' => 'Redes Sociales',
 					'parent_slug' => 'site_options',
-				),
+				)
 			);
 		}
 	}
