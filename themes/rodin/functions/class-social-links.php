@@ -131,10 +131,10 @@ class Social_Links {
 		if ( function_exists( 'acf_add_options_page' ) ) {
 			acf_add_options_sub_page(
 				array(
+					'menu_slug' => $this->slug,
 					'page_title' => 'Redes Sociales',
 					'menu_title' => 'Redes Sociales',
 					'parent_slug' => 'site_options',
-					'menu_slug' => $this->slug,
 				),
 			);
 		}
