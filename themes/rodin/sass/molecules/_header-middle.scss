@@ -1,0 +1,81 @@
+.header-middle
+{
+	background: $sea-buckthorn;
+	height: 1.75*$lh;
+
+	&__inner
+	{
+		align-items: center;
+		display: grid;
+		grid-column-gap: 5px;
+		grid-template-columns: 1fr auto auto;
+		height: inherit;
+		margin: 0 auto;
+		width: calc(100% - 52px);
+	}
+
+	&__logo
+	{
+		display: none;
+	}
+}
+
+@include m
+{
+	.header-middle
+	{
+		background: $white;
+		height: auto;
+		padding: .75*$lh 0;
+
+		&__inner
+		{
+			grid-column-gap: .25*$lh;
+			grid-template-columns: auto 1fr auto auto;
+		}
+
+		&__logo
+		{
+			display: block;
+		}
+
+		&__my-account-link
+		{
+			display: none;
+		}
+
+		&__search-form
+		{
+			display: block !important;
+		}
+	}
+
+}
+
+@include l
+{
+	.header-middle
+	{
+		padding: 1*$lh 0;
+
+		&__inner
+		{
+			width: 960px;
+		}
+	}
+}
+
+@include xl
+{
+
+	.header-middle
+	{
+
+		&__inner
+		{
+			width: 1280px;
+		}
+
+	}
+
+}

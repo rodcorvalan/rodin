@@ -1,0 +1,11 @@
+2019-11-20T17:23:03+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::add_error() in C:\xampp7\htdocs\rodin\wp-content\plugins\discounts\discounts.php:56
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-includes\class-wp-hook.php(286): wc_minimum_order_amount('')
+#1 C:\xampp7\htdocs\rodin\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 C:\xampp7\htdocs\rodin\wp-includes\plugin.php(465): WP_Hook->do_action(Array)
+#3 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\templates\cart\cart.php(20): do_action('woocommerce_bef...')
+#4 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\xampp7\\htdoc...')
+#5 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-cart.php(97): wc_get_template('cart/cart.php')
+#6 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Cart::output(Array)
+#7 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(8 en C:\xampp7\htdocs\rodin\wp-content\plugins\discounts\discounts.php en la línea 56
+

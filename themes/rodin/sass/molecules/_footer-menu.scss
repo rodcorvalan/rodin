@@ -1,0 +1,18 @@
+.footer-menu
+{
+	.menu__list
+	{
+		display: grid;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: .5*$lh;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.menu__link
+	{
+		display: block;
+		font-size: 13px;
+		font-weight: 300;
+		line-height: .5*$lh;
+	}
+}

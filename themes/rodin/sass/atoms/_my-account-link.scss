@@ -1,0 +1,24 @@
+.my-account-link
+{
+
+	&__link
+	{
+		align-items: center;
+		display: flex;
+	}
+
+	&__icon
+	{
+		display: block;
+		height: 20px;
+		margin-right: 5px;
+		width: auto;
+	}
+
+	&__text
+	{
+		display: block;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}

@@ -1,0 +1,56 @@
+.heading--style-one
+{
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1*$lh;
+	white-space: nowrap;
+
+	&::before
+	{
+		background-image: url('../images/title-arrow.svg');
+		background-position: center;
+		background-size: 18px 18px;
+		content: '';
+		display: block;
+		height: 18px;
+		margin-right: .25*$lh;
+		min-width: 18px;
+		width: 18px;
+	}
+
+	&::after
+	{
+		background: $sea-buckthorn;
+		content: ' ';
+		display: block;
+		height: 1px;
+		margin-left: .5*$lh;
+		width: 100%;
+	}
+
+	@include l
+	{
+		font-size: 24px;
+
+		&::before
+		{
+			background-size: 26px 26px;
+			height: 26px;
+			margin-right: .75*$lh;
+			min-width: 26px;
+			width: 26px;
+		}
+
+		&::after
+		{
+			margin-left: .75*$lh;
+		}
+	}
+
+	@include xl
+	{
+		font-size: 28px;
+	}
+}

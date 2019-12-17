@@ -1,0 +1,6 @@
+X create plugin
+X create config page
+X create button and url
+- form & create list & session
+- email
+- product counter

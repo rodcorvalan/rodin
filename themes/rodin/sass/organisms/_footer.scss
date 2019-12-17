@@ -1,0 +1,119 @@
+.footer
+{
+	border-top: 1px solid $mine-shaft;
+
+	&__inner
+	{
+		align-items: center;
+		display: grid;
+		grid-row-gap: 1*$lh;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		justify-content: center;
+		margin: 0 auto;
+		padding: 1*$lh 0;
+		width: calc(100% - 52px);
+	}
+
+	&__logo
+	{
+		grid-column: span 4;
+		justify-self: center;
+
+		.logo__heading
+		{
+			height: 1.5*$lh;
+		}
+	}
+
+	&__footer-menu
+	{
+		grid-column: span 4;
+	}
+
+	&__social-links
+	{
+		align-self: center;
+		grid-column: span 3;
+
+		.social-links__list
+		{
+			display: flex;
+		}
+
+		.social-links__link
+		{
+			display: block;
+			padding: .125*$lh;
+		}
+	}
+
+	&__afip
+	{
+		grid-column: span 1;
+		justify-self: start;
+	}
+
+}
+
+@include m
+{
+	.footer
+	{
+		&__inner
+		{
+			align-items: center;
+			grid-column-gap: 1*$lh;
+			grid-template-columns: repeat(12, 1fr);
+		}
+
+		&__logo
+		{
+			grid-column: span 3;
+			justify-self: start;
+
+			.logo__heading
+			{
+				height: 2*$lh;
+			}
+		}
+
+		&__footer-menu
+		{
+			grid-column: span 5;
+			justify-self: start;
+		}
+
+		&__social-links
+		{
+			justify-self: end;
+			grid-column: span 3;
+		}
+
+		&__afip
+		{
+			grid-column: span 1;
+		}
+	}
+}
+
+@include l
+{
+	.footer
+	{
+		&__inner
+		{
+			width: 960px;
+		}
+	}
+}
+
+@include xl
+{
+	.footer
+	{
+		&__inner
+		{
+			width: 1280px;
+		}
+	}
+}

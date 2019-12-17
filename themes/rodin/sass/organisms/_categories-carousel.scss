@@ -1,0 +1,147 @@
+.categories-carousel
+{
+	background: $catskill-white;
+	padding: 1.25*$lh 0;
+	position: relative;
+
+	&::after
+	{
+		background: $sea-buckthorn;
+		content: '';
+		display: block;
+		height: 5px;
+		left: 0;
+		position: absolute;
+		top: 3.5*$lh;
+		width: 100%;
+	}
+
+	&__list
+	{
+		display: block;
+		list-style: none;
+		position: relative;
+		z-index: 3;
+	}
+
+	&__item
+	{
+		display: block;
+		width: 6*$lh;
+	}
+
+	&__item-wrapper
+	{
+		display: block;
+		text-align: center;
+	}
+
+	&__item-image-wrapper
+	{
+		background: $mine-shaft;
+		border-radius: 50%;
+		display: inline-block;
+		height: 5*$lh;
+		margin-bottom: .5*$lh;
+		overflow: hidden;
+		width: 5*$lh;
+	}
+
+	&__item-image
+	{
+		border-radius: inherit;
+		display: block;
+		height: inherit;
+		width: inherit;
+	}
+
+	&__link
+	{
+		display: block;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: .75*$lh;
+	}
+
+	.owl-stage
+	{
+		box-sizing: content-box;
+		padding: 0 1*$lh;
+	}
+
+	.owl-dots
+	{
+		margin-top: 1*$lh;
+	}
+
+
+}
+
+@include m
+{
+	.categories-carousel
+	{
+		padding: 2*$lh 0;
+
+		&::after
+		{
+			top: 5.5*$lh;
+		}
+
+		&__item
+		{
+			width: 9*$lh;
+		}
+
+		&__item-image-wrapper
+		{
+			height: 7*$lh;
+			width: 7*$lh;
+		}
+
+		&__link
+		{
+			font-size: 16px;
+		}
+
+		.owl-dots
+		{
+			margin-top: 1*$lh;
+		}
+
+	}
+
+}
+
+@include l
+{
+	.categories-carousel
+	{
+		padding: 2*$lh 0;
+
+		&__inner
+		{
+			margin: 0 auto;
+			width: 960px;
+		}
+
+	}
+
+}
+
+@include xl
+{
+	.categories-carousel
+	{
+		padding: 2*$lh 0;
+
+		&__inner
+		{
+			margin: 0 auto;
+			width: 1280px;
+		}
+
+	}
+
+}
+

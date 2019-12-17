@@ -1,0 +1,12 @@
+<div class="form__row">
+	[text* first_name class:form__input placeholder "Nombre"]
+</div>
+<div class="form__row">
+	[text* last_name class:form__input placeholder "Apellido"]
+</div>
+<div class="form__row">
+	[email* email class:form__input placeholder "Email"]
+</div>
+<div class="form__row form__row--type-submit">
+	[submit class:form__button class:button class:button--style-two "Enviar" ]
+</div>

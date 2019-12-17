@@ -1,0 +1,43 @@
+.banner
+{
+	margin: 1.5*$lh 0;
+
+	&__image
+	{
+		background-image: auto 6*$lh;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 6*$lh;
+		margin: 0 auto;
+		width: calc(100% - 52px);
+	}
+}
+
+@include l
+{
+	.banner
+	{
+		margin: 2*$lh 0;
+
+		&__image
+		{
+			width: 960px;
+		}
+	}
+}
+
+@include xl
+{
+	.banner
+	{
+		margin: 3*$lh 0;
+
+		&__image
+		{
+			background-image: auto 7*$lh;
+			height: 7*$lh;
+			width: 1280px;
+		}
+	}
+}

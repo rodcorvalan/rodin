@@ -1,0 +1,50 @@
+.cart-count
+{
+	&__link
+	{
+		align-items: center;
+		border: 1px solid $tawny-port;
+		border-radius: 50%;
+		display: flex;
+		height: 1.25*$lh;
+		justify-content: center;
+		position: relative;
+		width: 1.25*$lh;
+	}
+
+	&__icon
+	{
+		display: block;
+		height: .675*$lh;
+		width: .675*$lh;
+	}
+
+	&__number
+	{
+		align-items: center;
+		background: $tawny-port;
+		border-radius: 50%;
+		color: $white;
+		display: flex;
+		font-size: 8px;
+		font-weight: 700;
+		height: 16px;
+		justify-content: center;
+		position: absolute;
+		right: -4px;
+		top: -4px;
+		width: 16px;
+	}
+}
+
+@include m
+{
+	.cart-count
+	{
+		&__number
+		{
+			background: $sea-buckthorn;
+			color: $ebony;
+		}
+	}
+}

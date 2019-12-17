@@ -1,0 +1,23 @@
+.header
+{
+	margin-bottom: 4px;
+	position: relative;
+
+	&__float-menu
+	{
+		position: absolute;
+		top: 2.25*$lh;
+	}
+}
+
+@include m
+{
+	.header
+	{
+		&__search-form,
+		&__float-menu
+		{
+			display: none !important;
+		}
+	}
+}

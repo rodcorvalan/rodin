@@ -1,0 +1,65 @@
+.page-template-template-ui
+{
+	.container
+	{
+		background-image: url('../images/ui-bg.png');
+		margin: 0 auto;
+		margin-top: 2*$lh;
+		padding: 3*$lh 4*$lh;
+		width: 90%;
+	}
+
+	.ui-title
+	{
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1*$lh;
+		margin-bottom: 1*$lh;
+		margin-top: 1*$lh;
+	}
+
+	.ui-text
+	{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 26px;
+		margin-bottom: .5*$lh;
+	}
+
+	.ui-buttons-table
+	{
+		align-items: end;
+		display: grid;
+		grid-row-gap: 1*$lh;
+		grid-template-columns: 10*$lh 10*$lh 10*$lh;
+		margin-bottom: 2*$lh;
+	}
+
+	.button
+	{
+		width: 195px;
+	}
+
+	.row
+	{
+		/*background: #eee;*/
+		padding: 20px 0;
+	}
+
+	.row > *
+	{
+		background: white;
+	}
+
+	table:not(.table)
+	{
+		width: 100%;
+	}
+
+	table:not(.table) td
+	{
+		padding: 10px;
+		vertical-align: middle;
+	}
+
+}

@@ -1,0 +1,2 @@
+2019-12-02T15:39:48+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\category-menu.php en la línea 21
+

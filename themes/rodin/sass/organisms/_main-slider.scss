@@ -1,0 +1,337 @@
+.main-slider
+{
+	@include remove-highlight;
+	height: 18*$lh;
+	overflow: hidden;
+	position: relative;
+
+	&__slider
+	{
+		height: inherit;
+	}
+
+	&__arrow
+	{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+
+		&:hover
+		{
+			opacity: .8;
+		}
+	}
+
+	&__arrow-left
+	{
+		left: 1*$lh;
+	}
+
+	&__arrow-right
+	{
+		right: 1*$lh;
+	}
+
+	&__arrow-image
+	{
+		height: 30px;
+		width: 30px;
+	}
+
+	&__dots
+	{
+		bottom: 1*$lh;
+		height: 1*$lh;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%);
+	}
+
+	// Slide.
+
+	&__slide
+	{
+		background-position: center;
+		background-size: 100% auto;
+		height: inherit;
+	}
+
+	&__slide-inner
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+		padding: 1*$lh 0;
+		width: 100%;
+	}
+
+	&__slide-heading
+	{
+		align-items: center;
+		color: $white;
+		display: inline-flex;
+		flex-direction: column;
+		height: 3*$lh;
+		justify-content: center;
+		padding: 0 1*$lh;
+		text-align: center;
+	}
+
+	&__title
+	{
+		font-size: 20px;
+		font-weight: 700;
+	}
+
+	&__subtitle
+	{
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	&__description
+	{
+		display: none;
+	}
+
+	&__image-wrapper
+	{
+		height: 9*$lh;
+		position: relative;
+	}
+
+	&__image
+	{
+		height: inherit;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: auto;
+		z-index: 2;
+	}
+
+	&__square
+	{
+		background: $sea-buckthorn;
+		height: 3*$lh;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 100%;
+		z-index: 1;
+	}
+
+	&__button-wrapper
+	{
+		text-align: center;
+	}
+
+	&__view-more
+	{
+		max-width: 100%;
+		width: 220px;
+	}
+
+}
+
+@include m
+{
+	.main-slider
+	{
+
+		&__arrow
+		{
+			left: 26px;
+			top: 1.5*$lh;
+			transform: translateY(0);
+		}
+
+		&__arrow-right
+		{
+			left: calc(26px + 29px);
+		}
+
+		&__dots
+		{
+			bottom: 1.5*$lh;
+			left: 26px;
+			transform: translate(0);
+		}
+
+		// Slide.
+
+		&__slide
+		{
+			text-align: center;
+		}
+
+		&__slide-inner
+		{
+			align-items: center;
+			display: inline-grid;
+			grid-row-gap: 1*$lh;
+			grid-template-columns: minmax(0, 4fr) minmax(0, 1fr) minmax(0, 5fr);
+			grid-template-rows: auto auto;
+			height: 12*$lh;
+			justify-content: center;
+			margin: 3*$lh 0;
+			padding: 0;
+			width: calc(100% - 52px);
+		}
+
+		&__slide-heading
+		{
+			align-items: flex-start;
+			align-self: end;
+			grid-column: 1/2;
+			grid-row: 1/2;
+			height: auto;
+			padding: 0;
+			text-align: left;
+		}
+
+		&__title
+		{
+			font-size: 26px;
+			line-height: 1.25*$lh;
+		}
+
+		&__subtitle
+		{
+			font-size: 18px;
+		}
+
+		&__image-wrapper
+		{
+			grid-column: 3/4;
+			grid-row: 1/3;
+			height: 14*$lh;
+		}
+
+		&__image
+		{
+			height: auto;
+			width: 100%;
+		}
+
+		&__button-wrapper
+		{
+			align-self: start;
+			grid-column: 1/2;
+			grid-row: 2/3;
+			text-align: left;
+		}
+
+	}
+}
+
+@include l
+{
+	.main-slider
+	{
+		&__arrow
+		{
+			left: calc(( 100% - 960px ) / 2);
+			top: 2*$lh;
+		}
+
+		&__arrow-right
+		{
+			left: calc((( 100% - 960px ) / 2) + 29px);
+		}
+
+		&__dots
+		{
+			bottom: 2*$lh;
+			left: calc(( 100% - 960px ) / 2);
+		}
+
+		// Slide.
+
+		&__slide-inner
+		{
+			align-items: center;
+			grid-template-columns: minmax(0, 5fr) minmax(0, 2fr) minmax(0, 4fr);
+			height: 14*$lh;
+			margin: 2*$lh 0;
+			justify-content: center;
+			width: 960px;
+		}
+
+		&__slide-heading
+		{
+
+		}
+
+		&__title
+		{
+			font-size: 30px;
+			line-height: 1.5*$lh;
+		}
+
+		&__description
+		{
+			border-top: 1px solid $sea-buckthorn;
+			display: block;
+			font-size: 14px;
+			font-weight: 300;
+			margin-top: .5*$lh;
+			padding-top: .5*$lh;
+		}
+
+		&__square
+		{
+			height: 4*$lh;
+		}
+
+	}
+}
+
+@include xl
+{
+	.main-slider
+	{
+		height: 22*$lh;
+
+		&__arrow
+		{
+			left: calc(( 100% - 1280px ) / 2);
+		}
+
+		&__arrow-right
+		{
+			left: calc((( 100% - 1280px ) / 2) + 29px);
+		}
+
+		&__dots
+		{
+			left: calc(( 100% - 1280px ) / 2);
+		}
+
+		// Slide.
+
+		&__slide-inner
+		{
+			grid-template-columns: minmax(0, 5fr) minmax(0, 2fr) minmax(0, 4fr);
+			width: 1280px;
+		}
+
+		&__image-wrapper
+		{
+			height: 16.5*$lh;
+		}
+
+		&__square
+		{
+			height: 6*$lh;
+		}
+
+		&__description
+		{
+			font-size: 16px;
+			margin-top: 1*$lh;
+			padding-top: 1*$lh;
+		}
+	}
+}

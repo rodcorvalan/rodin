@@ -1,0 +1,83 @@
+.search-form
+{
+	background: $catskill-white;
+	display: none;
+
+	&__inner
+	{
+		margin: 0 auto;
+		width: calc(100% - 52px);
+	}
+
+	&__form
+	{
+		display: grid;
+		grid-template-columns: 1fr auto;
+		justify-content: center;
+		padding: .5*$lh 0;
+	}
+
+	&__input
+	{
+		background: $white;
+		border: 1px solid $tawny-port;
+		border-radius: 12px 0 0 12px;
+		border-right: 0;
+		font-size: 12px;
+		font-weight: 300;
+		height: 1.5*$lh;
+		line-height: 1.5*$lh - 2px;
+		padding: 0 .5*$lh;
+		width: 100%;
+	}
+
+	&__submit
+	{
+		border-radius: 0 12px 12px 0;
+		max-width: 120px;
+	}
+}
+
+@include m
+{
+	.search-form
+	{
+		background: none;
+
+		&__inner
+		{
+			padding: 0 .75*$lh;
+			width: 100%;
+		}
+
+		&__form
+		{
+			width: 100%;
+		}
+
+		&__input
+		{
+			border-radius: 20px 0 0 20px;
+			font-size: 14px;
+			height: 1.5*$lh;
+			line-height: 1.5*$lh - 2px;
+			padding: 0 .75*$lh;
+			width: 100%;
+		}
+
+		&__submit
+		{
+			border-radius: 0 20px 20px 0;
+			height: 1.5*$lh;
+		}
+	}
+}
+
+@include xl
+{
+	.search-form
+	{
+		justify-self: center;
+		width: 800px;
+	}
+}

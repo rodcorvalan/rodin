@@ -1,0 +1,49 @@
+.logo
+{
+	display: block;
+	text-align: center;
+
+	.logo__heading
+	{
+		display: inline-block;
+		height: 1.25*$lh;
+		position: relative;
+		top: 2px;
+		vertical-align: top;
+		width: auto;
+	}
+
+	.logo__link,
+	.logo__image
+	{
+		display: block;
+		height: inherit;
+		width: inherit;
+	}
+}
+
+@include m
+{
+	.logo
+	{
+		text-align: left;
+
+		.logo__heading
+		{
+			height: 2*$lh;
+		}
+	}
+}
+
+@include m
+{
+	.logo
+	{
+		//padding: 0 2*$lh;
+
+		.logo__heading
+		{
+			height: 2.5*$lh;
+		}
+	}
+}

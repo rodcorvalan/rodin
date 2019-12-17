@@ -1,0 +1,48 @@
+.menu-icon
+{
+	@include remove-highlight;
+	display: inline-flex;
+	left: -.125*$lh;
+	position: relative;
+	text-align: center;
+	width: auto;
+
+	&__link
+	{
+		align-items: center;
+		display: inline-flex;
+		justify-content: center;
+		padding: .25*$lh;
+	}
+
+	&__icon
+	{
+		height: 12px;
+	}
+
+	.menu-icon__link--state-close
+	{
+		.menu-icon__icon--menu
+		{
+			display: block;
+		}
+
+		.menu-icon__icon--close
+		{
+			display: none;
+		}
+	}
+
+	.menu-icon__link--state-open
+	{
+		.menu-icon__icon--menu
+		{
+			display: none;
+		}
+
+		.menu-icon__icon--close
+		{
+			display: block;
+		}
+	}
+}

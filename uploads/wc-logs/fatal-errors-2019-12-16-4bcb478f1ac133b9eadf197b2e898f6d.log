@@ -1,0 +1,12 @@
+2019-12-16T18:13:19+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on bool in C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php:10
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\woocommerce\content-product.php(27): include()
+#1 C:\xampp7\htdocs\rodin\wp-includes\template.php(724): require('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\wc-core-functions.php(195): load_template('C:\\xampp7\\htdoc...', false)
+#3 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\templates\single-product\related.php(37): wc_get_template_part('content', 'product')
+#4 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\wc-core-functions.php(249): include('C:\\xampp7\\htdoc...')
+#5 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1924): wc_get_template('single-product/...', Array)
+#6 C:\xampp7\htdocs\rodin\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1887): woocommerce_related_p en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php en la línea 10
+
+2019-12-16T18:24:28+00:00 CRITICAL Object of class WP_Post could not be converted to string en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\category-menu.php en la línea 45
+

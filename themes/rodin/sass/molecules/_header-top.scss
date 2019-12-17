@@ -1,0 +1,199 @@
+.header-top
+{
+	padding: .5*$lh 0;
+
+	&__inner
+	{
+		align-items: center;
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr;
+		justify-content: center;
+		margin: 0 auto;
+		width: calc(100% - 52px);
+	}
+
+	&__menu-icon
+	{
+		justify-self: start;
+	}
+
+	&__search-icon
+	{
+		justify-self: end;
+	}
+
+	&__main-menu,
+	&__my-account-link,
+	&__social-links
+	{
+		display: none;
+	}
+}
+
+@include m
+{
+	.header-top
+	{
+		border-bottom: 1px solid $catskill-white;
+		padding: 0;
+
+		&__inner
+		{
+			grid-column-gap: 1*$lh;
+			grid-template-columns: 1fr auto auto;
+		}
+
+		&__menu-icon,
+		&__search-icon,
+		&__logo
+		{
+			display: none;
+		}
+
+		&__main-menu
+		{
+			display: block;
+
+			.menu__item--130,
+			.menu__icon
+			{
+				display: none;
+			}
+
+			.menu__list
+			{
+				display: flex;
+			}
+
+			.menu__item
+			{
+				margin-right: 8px;
+			}
+
+			.menu__link
+			{
+				display: block;
+				padding: .5*$lh .25*$lh;
+			}
+
+			.menu__text
+			{
+				font-size: 12px;
+				font-weight: 300;
+			}
+
+			.current-menu__item
+			{
+				.menu__link
+				{
+					position: relative;
+
+					&::after
+					{
+						background: $sea-buckthorn;
+						bottom: -2px;
+						content: '';
+						display: block;
+						height: 3px;
+						left: 0;
+						position: absolute;
+						width: 100%;
+					}
+				}
+			}
+
+		}
+
+		&__my-account-link
+		{
+			display: block;
+		}
+
+		&__social-links
+		{
+			display: block;
+
+			.social-links__list
+			{
+				display: flex;
+			}
+
+			.social-links__link
+			{
+				display: block;
+				padding: .125*$lh;
+			}
+
+			.social-links__icon
+			{
+				display: block;
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+}
+
+@include l
+{
+
+	.header-top
+	{
+
+		&__inner
+		{
+			width: 960px;
+		}
+
+		&__main-menu
+		{
+			.menu__item--130
+			{
+				display: block;
+			}
+
+			.menu__item
+			{
+				margin-right: 16px;
+			}
+
+			.menu__link
+			{
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				padding: .75*$lh .25*$lh;
+			}
+
+			.menu__icon
+			{
+				display: block;
+				height: 20px;
+				margin-right: 6px;
+				width: 20px;
+			}
+
+			.menu__text
+			{
+				font-size: 14px;
+			}
+		}
+
+	}
+
+}
+
+@include xl
+{
+
+	.header-top
+	{
+
+		&__inner
+		{
+			width: 1280px;
+		}
+
+	}
+
+}

@@ -1,0 +1,225 @@
+.subscription-form
+{
+	background-image: url('../images/subscription-form-s.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 12*$lh;
+
+	&__inner
+	{
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: inherit;
+		margin: 0 auto;
+		padding: 1*$lh 0;
+		width: 268px;
+	}
+
+	&__title
+	{
+		align-items: center;
+		display: flex;
+		height: 1.5*$lh;
+		margin-bottom: .75*$lh;
+	}
+
+	&__icon
+	{
+		display: block;
+		height: 1*$lh;
+		margin-right: 10px;
+		width: 1*$lh;
+	}
+
+	&__text
+	{
+		color: $white;
+		font-size: 16px;
+		font-weight: 700;
+		line-height: .75*$lh;
+	}
+
+	.wpcf7-form
+	{
+		display: grid;
+		grid-row-gap: .5*$lh;
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.form__row
+	{
+		grid-column: span 2;
+	}
+
+	.form__input
+	{
+		border: 1px solid $white;
+		border-radius: 26px;
+		color: $white;
+		display: block;
+		font-size: 14px;
+		font-weight: 300;
+		height: 1.5*$lh;
+		line-height: 37px;
+		padding: 0 18px;
+		width: 100%;
+
+		&.wpcf7-not-valid
+		{
+			border: 1px dashed $white;
+			//line-height: 35px;
+		}
+
+		@include placeholder
+		{
+			color: $white;
+			opacity: .8;
+		}
+
+	}
+
+	.form__row--type-submit
+	{
+		align-items: center;
+		display: flex;
+		grid-column: span 1;
+		justify-content: flex-start;
+		padding-top: .25*$lh;
+	}
+
+	.button
+	{
+		width: 130px;
+	}
+
+	.ajax-loader
+	{
+		background-image: url('../images/ajax-loader-white.svg');
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		display: none;
+		height: 1*$lh;
+		margin-left: 10px;
+		width: 1*$lh;
+
+		&.is-active
+		{
+			display: block;
+		}
+	}
+
+	.screen-reader-response,
+	.wpcf7-not-valid-tip
+	{
+		display: none !important;
+	}
+
+	.wpcf7-mail-sent-ok,
+	.wpcf7-validation-errors
+	{
+		align-self: center;
+		background-image: url('../images/check.svg');
+		background-repeat: no-repeat;
+		background-size: auto 100%;
+		font-size: 0;
+		height: 1*$lh;
+		justify-self: end;
+		width: 1*$lh;
+	}
+
+	.wpcf7-validation-errors
+	{
+		background-image: url('../images/alert.svg');
+	}
+
+}
+
+@include m
+{
+	.subscription-form
+	{
+		background-image: url('../images/subscription-form-m.jpg');
+		height: 10*$lh;
+
+		&__inner
+		{
+			width: 440px;
+		}
+
+		&__text
+		{
+			font-size: 18px;
+		}
+
+		.wpcf7-form
+		{
+			grid-column-gap: .5*$lh;
+			grid-row-gap: .5*$lh;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		.form__row:nth-child(1),
+		.form__row:nth-child(2),
+		.form__row:nth-child(3),
+		{
+			grid-column: span 1;
+		}
+	}
+}
+
+@include l
+{
+	.subscription-form
+	{
+		background-image: url('../images/subscription-form-l.jpg');
+		height: 10*$lh;
+
+		&__inner
+		{
+			width: 520px;
+		}
+
+		&__icon
+		{
+			height: 1.5*$lh;
+			margin-right: 10px;
+			width: 1.5*$lh;
+		}
+
+		&__text
+		{
+			font-size: 20px;
+		}
+
+	}
+}
+
+@include xl
+{
+	.subscription-form
+	{
+		background-image: url('../images/subscription-form-l.jpg');
+		height: 12*$lh;
+
+		&__inner
+		{
+			padding: 2*$lh 0;
+			width: 600px;
+		}
+
+		&__icon
+		{
+			height: 1.5*$lh;
+			margin-right: 10px;
+			width: 1.5*$lh;
+		}
+
+		&__text
+		{
+			font-size: 24px;
+		}
+
+	}
+}

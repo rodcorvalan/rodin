@@ -1,0 +1,18 @@
+.copyright
+{
+	background: $tawny-port;
+	color: $white;
+	font-size: 10px;
+	line-height: .5*$lh;
+	padding: .5*$lh 1*$lh;
+	text-align: center;
+}
+
+.copyright__logo
+{
+	display: inline-block;
+	height: .5*$lh;
+	margin-left: 5px;
+	vertical-align: middle;
+	width: auto;
+}

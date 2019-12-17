@@ -1,0 +1,51 @@
+2019-12-04T16:44:55+00:00 CRITICAL syntax error, unexpected '}' en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\products-carousel.php en la línea 26
+
+2019-12-04T16:46:04+00:00 CRITICAL Uncaught Error: Call to undefined function get_title() in C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\products-carousel.php:35
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\modules.php(3): include()
+#1 C:\xampp7\htdocs\rodin\wp-includes\template.php(724): require('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\rodin\wp-includes\template.php(671): load_template('C:\\xampp7\\htdoc...', false)
+#3 C:\xampp7\htdocs\rodin\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#4 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\page.php(17): get_template_part('parts/organisms...')
+#5 C:\xampp7\htdocs\rodin\wp-includes\template-loader.php(98): include('C:\\xampp7\\htdoc...')
+#6 C:\xampp7\htdocs\rodin\wp-blog-header.php(19): require_once('C:\\xampp7\\htdoc...')
+#7 C:\xampp7\htdocs\rodin\index.php(17): require('C:\\xampp7\\htdoc...')
+#8 {main}
+  thrown en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\products-carousel.php en la línea 35
+
+2019-12-04T20:20:10+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on bool in C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php:10
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\products-carousel.php(96): include()
+#1 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\modules.php(3): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\rodin\wp-includes\template.php(724): require('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\rodin\wp-includes\template.php(671): load_template('C:\\xampp7\\htdoc...', false)
+#4 C:\xampp7\htdocs\rodin\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#5 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\page.php(17): get_template_part('parts/organisms...')
+#6 C:\xampp7\htdocs\rodin\wp-includes\template-loader.php(98): include('C:\\xampp7\\htdoc...')
+#7 C:\xampp7\htdocs\rodin\wp-blog-header.php(19): require_once('C:\\xampp7\\htdoc...')
+#8 C:\xampp7\htdocs\rodin\index.php(17): require('C:\\xampp7\\ en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php en la línea 10
+
+2019-12-04T20:21:52+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on bool in C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php:12
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\products-carousel.php(96): include()
+#1 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\modules.php(3): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\rodin\wp-includes\template.php(724): require('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\rodin\wp-includes\template.php(671): load_template('C:\\xampp7\\htdoc...', false)
+#4 C:\xampp7\htdocs\rodin\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#5 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\page.php(17): get_template_part('parts/organisms...')
+#6 C:\xampp7\htdocs\rodin\wp-includes\template-loader.php(98): include('C:\\xampp7\\htdoc...')
+#7 C:\xampp7\htdocs\rodin\wp-blog-header.php(19): require_once('C:\\xampp7\\htdoc...')
+#8 C:\xampp7\htdocs\rodin\index.php(17): require('C:\\xampp7\\ en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php en la línea 12
+
+2019-12-04T20:22:27+00:00 CRITICAL Uncaught Error: Call to a member function get_sale_price() on bool in C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php:13
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\products-carousel.php(96): include()
+#1 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\modules.php(3): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\rodin\wp-includes\template.php(724): require('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\rodin\wp-includes\template.php(671): load_template('C:\\xampp7\\htdoc...', false)
+#4 C:\xampp7\htdocs\rodin\wp-includes\general-template.php(168): locate_template(Array, true, false)
+#5 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\page.php(17): get_template_part('parts/organisms...')
+#6 C:\xampp7\htdocs\rodin\wp-includes\template-loader.php(98): include('C:\\xampp7\\htdoc...')
+#7 C:\xampp7\htdocs\rodin\wp-blog-header.php(19): require_once('C:\\xampp7\\htdoc...')
+#8 C:\xampp7\htdocs\rodin\index.php(17): require('C:\\xampp7\\ en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\products-item.php en la línea 13
+
