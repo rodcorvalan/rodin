@@ -40,7 +40,10 @@ namespace Rodin_Budget {
 			if ( isset( $_GET['add-to-budget'] ) ) {
 
 				$post_id = intval( $_GET['add-to-budget'] );
-				session_start();
+
+				if ( session_status() == PHP_SESSION_NONE ) {
+					session_start();
+				}
 
 				if ( isset( $_SESSION[ PREFIX . '_budget' ] ) ) {
 					$budget = $_SESSION[ PREFIX . '_budget' ];
@@ -140,13 +143,13 @@ namespace Rodin_Budget {
 						$first_name = $post_data['first_name'];
 						$last_name = $post_data['last_name'];
 
-						$subject = $post_data['subject'];
+						$subject = 'Mensaje enviado desde sitio Rodin: ' . $post_data['subject'];
 
-						$message = '<b>Nombre:</b> ' . $first_name . '</br></br>';
-						$message .= '<b>Apellido: </b>' . $last_name . '</br></br>';
-						$message .= '<b>Email: </b>' . $post_data['email'] . '</br></br>';
-						$message .= '<b>Asunto: </b>' . $post_data['subject'] . '</br></br>';
-						$message .= '<b>Notas Adicionales: </b>' . $post_data['content'] . '</br></br>';
+						$message = '<b>Nombre:</b> ' . $first_name . '<br><br>';
+						$message .= '<b>Apellido: </b>' . $last_name . '<br><br>';
+						$message .= '<b>Email: </b>' . $post_data['email'] . '<br><br>';
+						$message .= '<b>Asunto: </b>' . $post_data['subject'] . '<br><br>';
+						$message .= '<b>Notas Adicionales: </b>' . $post_data['content'] . '<br><br>';
 
 						$message .= '
 						<table border="1">
@@ -170,10 +173,14 @@ namespace Rodin_Budget {
 							</tbody>
 						</table>';
 
+						$headers = array();
+
+						$headers[] = 'MIME-Version: 1.0';
 						$headers[] = 'Content-Type: text/html; charset=UTF-8';
 						$headers[] = "Reply-To: $first_name $last_name <$reply_to>";
 
-						wp_mail( $to, $subject, $message, $headers );
+						$_SESSION[ PREFIX . '_sent' ] = true;
+						$_SESSION[ PREFIX . '_sent_success' ] = wp_mail( $to, $subject, $message, $headers );
 
 					}
 				}

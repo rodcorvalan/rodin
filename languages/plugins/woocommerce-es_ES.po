@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-12-05 17:11:12+0000\n"
+"PO-Revision-Date: 2019-12-30 07:53:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5426,11 +5426,6 @@ msgstr "WooCommerce PayFast Gateway"
 msgid "WooCommerce eWAY Gateway"
 msgstr "WooCommerce eWAY Gateway"
 
-#: includes/admin/class-wc-admin-api-keys.php:98
-#: includes/admin/settings/class-wc-settings-advanced.php:41
-msgid "REST API"
-msgstr "REST API"
-
 #: i18n/states.php:1160
 msgid "Yasothon"
 msgstr "Yasothon"
@@ -5880,6 +5875,11 @@ msgstr "Pedidos de la red WooCommerce"
 #: includes/admin/class-wc-admin-setup-wizard.php:518
 msgid "%1$s (%2$s %3$s)"
 msgstr "%1$s (%2$s %3$s)"
+
+#: includes/admin/class-wc-admin-api-keys.php:98
+#: includes/admin/settings/class-wc-settings-advanced.php:41
+msgid "REST API"
+msgstr "API REST"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:283
 msgid "Profile &rarr;"
@@ -17583,11 +17583,6 @@ msgstr "Precio fijo"
 msgid "These rates are extra shipping options with additional costs (based on the flat rate)."
 msgstr "Estas tarifas son opciones adicionales de envío con gastos adicionales (sobre la base del precio único)."
 
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:128
-#: includes/gateways/bacs/class-wc-gateway-bacs.php:290
-msgid "Sort code"
-msgstr "Código de clasificación"
-
 #: includes/emails/class-wc-email-customer-refunded-order.php:47
 msgid "Order refunded emails are sent to customers when their orders are refunded."
 msgstr "Los correos electrónicos de los reembolsos ​se envían a los clientes cuando sus pedidos se reembolsan."
@@ -17693,11 +17688,6 @@ msgstr "Error de validación: la respuesta IPN de Paypal proviene de una direcci
 msgid "Note added to your {site_title} order from {order_date}"
 msgstr "Nota añadida a tu pedido de {order_date} en {site_title}"
 
-#: includes/shipping/flat-rate/includes/settings-flat-rate.php:10
-#: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:12
-msgid "Enter a cost (excl. tax) or sum, e.g. <code>10.00 * [qty]</code>."
-msgstr "Introduce un coste (sin impuestos) o la suma, por ejemplo, <code>10.00 * [cant]</code> ."
-
 #: includes/emails/class-wc-email-customer-note.php:40
 msgid "Customer note emails are sent when you add a note to an order."
 msgstr "Los correos electrónicos de las notas de los clientes se envían cuando añades una nota a un pedido."
@@ -17705,6 +17695,16 @@ msgstr "Los correos electrónicos de las notas de los clientes se envían cuando
 #: includes/emails/class-wc-email-failed-order.php:32
 msgid "Failed order emails are sent to chosen recipient(s) when orders have been marked failed (if they were previously pending or on-hold)."
 msgstr "Los correos electrónicos de pedidos fallidos se envían a los destinatarios seleccionados cuando los pedidos han sido marcados como fallidos (si estaban previamente como pendientes o en espera)."
+
+#: includes/shipping/flat-rate/includes/settings-flat-rate.php:10
+#: includes/shipping/legacy-flat-rate/includes/settings-flat-rate.php:12
+msgid "Enter a cost (excl. tax) or sum, e.g. <code>10.00 * [qty]</code>."
+msgstr "Introduce un coste (sin impuestos) o la suma, por ejemplo, <code>10.00 * [qty]</code> ."
+
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:128
+#: includes/gateways/bacs/class-wc-gateway-bacs.php:290
+msgid "Sort code"
+msgstr "Código de clasificación"
 
 #: includes/class-wc-ajax.php:230
 msgid "Coupon has been removed."

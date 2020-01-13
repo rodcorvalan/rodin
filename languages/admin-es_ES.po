@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.3.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-11-30 07:39:17+0000\n"
+"PO-Revision-Date: 2019-12-23 20:34:19+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -364,7 +364,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/comments-screen/\">Docum
 
 #: wp-admin/options-general.php:391
 msgid "<a href=\"https://wordpress.org/support/article/formatting-date-and-time/\">Documentation on date and time formatting</a>."
-msgstr "<a href=\"https://wordpress.org/support/article/formatting-date-and-time/\">Documentación sobre el formato de fecha y hora</a>."
+msgstr "<a href=\"https://es.wordpress.org/support/article/formatting-date-and-time/\">Documentación sobre el formato de fecha y hora</a>."
 
 #. translators: %s: UTC time.
 #: wp-admin/options-general.php:246

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.3.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-12-13 07:26:18+0000\n"
+"PO-Revision-Date: 2020-01-09 12:35:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -205,11 +205,11 @@ msgstr "Aviso: la reproducción automática de audio puede provocar problemas de
 
 #: wp-includes/js/dist/block-library.js:15154
 msgid "All around this is an almost totally black screen. Now, as the camera moves slowly towards the window which is almost a postage stamp in the frame, other forms appear;"
-msgstr "Alrededor hay una pantalla casi totalmente negra. Ahora, mientras la cámara se mueve lentamente hacia la ventana, que es casi un sello de correos en el marco, aparecen otras formas;"
+msgstr "La luz incierta que precede al amanecer dibuja con dificultad los riscos y matojos del monte. "
 
 #: wp-includes/js/dist/block-library.js:15154
 msgid "Window, very small in the distance, illuminated."
-msgstr "Ventana, muy pequeña en la distancia, iluminada."
+msgstr "Sube niebla del valle. "
 
 #: wp-includes/js/dist/block-library.js:15154
 msgid "EXT. XANADU - FAINT DAWN - 1940 (MINIATURE)"

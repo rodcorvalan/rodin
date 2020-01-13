@@ -1,0 +1,26 @@
+2019-12-19T19:04:06+00:00 CRITICAL Uncaught Error: Class 'BEM_Menu_Walker' not found in C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\main-menu.php:13
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\header-top.php(11): include()
+#1 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\header.php(12): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\header.php(22): include('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\rodin\wp-includes\template.php(722): require_once('C:\\xampp7\\htdoc...')
+#4 C:\xampp7\htdocs\rodin\wp-includes\template.php(671): load_template('C:\\xampp7\\htdoc...', true)
+#5 C:\xampp7\htdocs\rodin\wp-includes\general-template.php(41): locate_template(Array, true)
+#6 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\template-basic.php(10): get_header()
+#7 C:\xampp7\htdocs\rodin\wp-includes\template-loader.php(98): include('C:\\xampp7\\htdoc...')
+#8 C:\xampp7\htdocs\rodin\wp-blog-header.php(19): require_once('C:\\xampp7\\htdoc...')
+#9 C:\xampp7\ en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\main-menu.php en la línea 13
+
+2019-12-19T19:04:21+00:00 CRITICAL Uncaught Error: Class 'ARMIX\Social_Links' not found in C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\social-links.php:8
+Stack trace:
+#0 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\header-top.php(16): include()
+#1 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\organisms\header.php(12): include('C:\\xampp7\\htdoc...')
+#2 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\header.php(22): include('C:\\xampp7\\htdoc...')
+#3 C:\xampp7\htdocs\rodin\wp-includes\template.php(722): require_once('C:\\xampp7\\htdoc...')
+#4 C:\xampp7\htdocs\rodin\wp-includes\template.php(671): load_template('C:\\xampp7\\htdoc...', true)
+#5 C:\xampp7\htdocs\rodin\wp-includes\general-template.php(41): locate_template(Array, true)
+#6 C:\xampp7\htdocs\rodin\wp-content\themes\rodin\template-basic.php(10): get_header()
+#7 C:\xampp7\htdocs\rodin\wp-includes\template-loader.php(98): include('C:\\xampp7\\htdoc...')
+#8 C:\xampp7\htdocs\rodin\wp-blog-header.php(19): require_once('C:\\xampp7\\htdoc...')
+#9 C:\xa en C:\xampp7\htdocs\rodin\wp-content\themes\rodin\parts\molecules\social-links.php en la línea 8
+
