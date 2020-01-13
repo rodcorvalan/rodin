@@ -1,6 +1,6 @@
 <?php
 /**
- * Page
+ * Template Name: Cover & Modules
  *
  * @package ARMIX
  */
@@ -12,7 +12,7 @@
 
 	<?php get_template_part( 'parts/organisms/page-cover' ); ?>
 
-	<?php get_template_part( 'parts/organisms/basic-content' ); ?>
+	<?php get_template_part( 'parts/organisms/modules' ); ?>
 
 <?php endwhile; endif; ?>
 

@@ -1,0 +1,40 @@
+.woocommerce
+{
+	.form-row
+	{
+		display: flex;
+		flex-direction: column;
+
+		label
+		{
+			@extend %label;
+			margin-bottom: .25*$lh;
+		}
+
+		.input-text
+		{
+			@extend %input-text;
+		}
+
+		.input-text + span
+		{
+			font-size: 13px;
+			line-height: .75*$lh;
+			margin-top: .25*$lh;
+		}
+
+		textarea.input-text
+		{
+			@extend %textarea
+		}
+	}
+
+	.woocommerce-input-wrapper
+	{
+		strong
+		{
+			@extend %input-text;
+			@extend %input-text--disabled;
+		}
+	}
+}

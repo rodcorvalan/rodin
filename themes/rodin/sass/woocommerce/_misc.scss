@@ -1,0 +1,42 @@
+.woocommerce .coupon
+{
+	display: inline-grid;
+	grid-row-gap: .25*$lh;
+
+	label
+	{
+		display: none;
+	}
+
+	.input-text
+	{
+		@extend %input-text;
+		text-align: center;
+	}
+
+}
+
+.checkout_coupon
+{
+	display: inline-grid;
+	grid-row-gap: .25*$lh;
+
+	p
+	{
+		font-size: 13px;
+		line-height: .75*$lh;
+	}
+
+	.input-text
+	{
+		@extend %input-text;
+		text-align: center;
+	}
+
+}
+
+
+.woocommerce .qty
+{
+	@extend %input-text;
+}

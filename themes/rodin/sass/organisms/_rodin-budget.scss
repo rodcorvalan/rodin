@@ -1,0 +1,64 @@
+.rodin-budget
+{
+
+	&__form
+	{
+		display: grid;
+		grid-column-gap: .5*$lh;
+		grid-row-gap: .5*$lh;
+	}
+
+	&__table
+	{
+		width: 100%;
+	}
+
+	&__input-text
+	{
+		@extend %input-text;
+	}
+
+	&__input-textarea
+	{
+		@extend %input-text;
+		@extend %textarea;
+	}
+
+	&__row-submit
+	{
+		text-align: center;
+	}
+
+}
+
+@include m
+{
+	.rodin-budget
+	{
+		&__form
+		{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		&__table,
+		&__row-input-textarea,
+		&__row-submit,
+		&__messages
+		{
+			grid-column: span 2;
+		}
+	}
+}
+
+@include l
+{
+	.rodin-budget
+	{
+		&__form
+		{
+			grid-column-gap: .75*$lh;
+			grid-row-gap: .75*$lh;
+		}
+	}
+}

@@ -1,0 +1,167 @@
+.woocommerce-checkout
+{
+	font-size: 14px;
+
+	.screen-reader-text
+	{
+		display: none;
+	}
+
+	.woocommerce-notices-wrapper,
+	.woocommerce-form-coupon-toggle
+	{
+		display: none;
+	}
+
+	.checkout,
+	.checkout .customer_details,
+	.checkout .woocommerce-billing-fields,
+	.checkout .woocommerce-billing-fields__field-wrapper,
+	.checkout .woocommerce-shipping-fields,
+	.checkout .woocommerce-shipping-fields__field-wrapper,
+	.checkout .woocommerce-additional-fields,
+	.checkout .woocommerce-additional-fields__field-wrapper,
+	.checkout .woocommerce-checkout-review-order,
+	#customer_details,
+	#customer_details .col-2,
+	.woocommerce-checkout-payment,
+	.woocommerce-checkout-payment .form-row
+	{
+		display: grid;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: .75*$lh;
+	}
+
+	#billing_address_2_field,
+	#shipping_address_2_field
+	{
+		align-self: end;
+	}
+
+	p a
+	{
+		text-decoration: underline;
+	}
+
+	h3
+	{
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	#customer_details
+	{	
+		.form-row
+		{
+			display: flex;
+			flex-direction: column;
+
+			label
+			{
+				@extend %label;
+				margin-bottom: .25*$lh;
+			}
+
+			.input-text
+			{
+				@extend %input-text;
+			}
+
+			textarea.input-text
+			{
+				@extend %textarea
+			}
+		}
+	}
+
+
+	.woocommerce-input-wrapper
+	{
+		strong
+		{
+			@extend %input-text;
+			@extend %input-text--disabled;
+		}
+	}
+
+	.woocommerce-form__label-for-checkbox
+	{
+		display: flex;
+
+		span
+		{
+			display: block;
+			font-size: 13px;
+			margin-left: 8px;
+		}
+	}
+
+}
+
+@include os
+{
+	.woocommerce-checkout table.shop_table tbody tr
+	{
+		&::before
+		{
+			content: 'Producto';
+		}
+	}
+}
+
+@include m
+{
+	.woocommerce-checkout
+	{
+		.woocommerce-billing-fields__field-wrapper,
+		.woocommerce-shipping-fields__field-wrapper
+		{
+			grid-template-columns: 1fr 1fr;
+		}
+
+	}
+}
+
+@include l
+{
+	.woocommerce-checkout
+	{
+		.checkout,
+		.checkout .customer_details,
+		.checkout .woocommerce-billing-fields,
+		.checkout .woocommerce-billing-fields__field-wrapper,
+		.checkout .woocommerce-shipping-fields,
+		.checkout .woocommerce-shipping-fields__field-wrapper,
+		.checkout .woocommerce-additional-fields,
+		.checkout .woocommerce-additional-fields__field-wrapper,
+		.checkout .woocommerce-checkout-review-order,
+		#customer_details,
+		#customer_details .col-2,
+		.woocommerce-checkout-payment,
+		.woocommerce-checkout-payment .form-row
+		{
+			grid-row-gap: 1*$lh;
+		}
+		
+	}
+}
+
+
+@include xl
+{
+	.woocommerce-checkout
+	{
+		.woocommerce-billing-fields__field-wrapper,
+		.woocommerce-shipping-fields__field-wrapper
+		{
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		h3,
+		#payment:before
+		{
+			font-size: 24px;
+			padding: .75*$lh 0;
+		}
+	}
+}

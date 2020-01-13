@@ -1,6 +1,6 @@
 <?php
 /**
- * Page
+ * Template Name: Modules
  *
  * @package ARMIX
  */
@@ -10,9 +10,7 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php get_template_part( 'parts/organisms/page-cover' ); ?>
-
-	<?php get_template_part( 'parts/organisms/basic-content' ); ?>
+	<?php get_template_part( 'parts/organisms/modules' ); ?>
 
 <?php endwhile; endif; ?>
 

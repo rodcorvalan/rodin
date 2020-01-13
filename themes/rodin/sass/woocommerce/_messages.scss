@@ -1,0 +1,33 @@
+.woocommerce-message,
+ul.woocommerce-error li
+{
+	background: $white;
+	border-left: 4px solid $tawny-port;
+	font-size: 14px;
+	line-height: .75*$lh;
+	padding: .5*$lh;
+
+	&:not(:last-child)
+	{
+		margin-bottom: .5*$lh;
+	}
+
+	b,
+	strong
+	{
+		font-weight: 700;
+	}
+
+	.button
+	{
+		@extend .button--style-three;
+		@extend .button--size-small;
+		margin-right: 8px;
+		width: auto;
+	}
+}
+
+ul.woocommerce-error li
+{
+	border-color: $sea-buckthorn;
+}

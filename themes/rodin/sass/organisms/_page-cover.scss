@@ -1,0 +1,145 @@
+.page-cover
+{
+	margin-bottom: 3*$lh;
+
+	&__inner
+	{
+		position: relative;
+	}
+
+	&__image
+	{
+		height: 8*$lh;
+	}
+
+	&__content
+	{
+		align-items: center;
+		background: linear-gradient(90deg, #591842 0%, #8E2564 100%);
+		bottom: -2*$lh;
+		color: $white;
+		display: flex;
+		justify-content: center;
+		left: 1*$lh;
+		min-height: 4*$lh;
+		padding: 1*$lh;
+		position: absolute;
+		text-align: left;
+		width: calc(100% - 52px);
+	}
+
+	&__content-inner
+	{
+		width: 100%;
+	}
+
+	&__title
+	{
+		background-image: url('../images/title-arrow.svg');
+		background-position: top left;
+		background-repeat: no-repeat;
+		background-size: 26px 26px;
+		font-size: 16px;
+		font-weight: 700;
+		padding-left: 1.5*$lh;
+		text-transform: uppercase;
+	}
+
+	&__breadcrumbs
+	{
+		border-top: 1px solid $sea-buckthorn;
+		font-size: 14px;
+		font-weight: 300;
+		margin-top: .5*$lh;
+		//padding-left: 1.5*$lh;
+		padding-top: .5*$lh;
+	}
+
+}
+
+@include m
+{
+	.page-cover
+	{
+		margin-bottom: 1*$lh;
+		text-align: right;
+
+		&__image
+		{
+			display: inline-block;
+			height: 11*$lh;
+			width: 75%;
+		}
+
+		&__content
+		{
+			bottom: 50%;
+			min-height: 6*$lh;
+			padding: 2*$lh 1.5*$lh;
+			transform: translateY(50%);
+			width: 60%;
+		}
+
+		&__title
+		{
+			font-size: 20px;
+		}
+
+		&__breadcrumbs
+		{
+			font-size: 16px;
+			margin-top: 1*$lh;
+			padding-top: 1*$lh;
+		}
+
+	}
+}
+
+@include l
+{
+	.page-cover
+	{
+		margin-top: 24px;
+
+		&__inner
+		{
+			margin: 0 auto;
+			width: 960px;
+		}
+
+		&__image
+		{
+			width: 100%;
+		}
+
+		&__content
+		{
+			left: -1*$lh;
+			padding: 1.5*$lh 2*$lh;
+			width: 50%;
+		}
+
+		&__title
+		{
+			background-position: 0 4px;
+			font-size: 26px;
+			line-height: 1.25*$lh;
+		}
+	}
+}
+
+@include xl
+{
+	.page-cover
+	{
+		&__inner
+		{
+			width: 1280px;
+		}
+
+		&__content
+		{
+			width: 50%;
+		}
+	}
+}

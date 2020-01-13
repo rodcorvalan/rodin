@@ -1,0 +1,86 @@
+.woocommerce
+{
+	#payment
+	{
+		font-size: 13px;
+
+		&::before
+		{
+			content: 'Métodos de Pago';
+			display: block;
+		}
+
+		ul.wc_payment_methods
+		{
+			display: grid;
+			grid-row-gap: .5*$lh;
+
+			li
+			{
+				border: 1px solid darken($catskill-white, 10%);
+
+				input
+				{
+					display: none;
+				}
+
+				label
+				{
+					align-items: center;
+					background: $white;
+					cursor: pointer;
+					display: flex;
+					justify-content: space-between;
+					padding: .5*$lh .75*$lh;
+				}
+
+				input:checked + label
+				{
+					background: $catskill-white;
+				}
+
+				input:checked + label + *
+				{
+					border-top: 1px solid darken($catskill-white, 10%);
+				}
+
+				img
+				{
+					display: block;
+					height: .75*$lh;
+					width: auto;
+				}
+
+				.payment_box
+				{
+					font-size: 12px;
+					line-height: .75*$lh;
+					padding: .5*$lh;
+				}
+			}
+		}
+
+	}
+}
+
+@include l
+{
+	.woocommerce
+	{
+		#payment
+		{
+			ul.wc_payment_methods
+			{
+				align-items: start;
+				grid-column-gap: 1*$lh;
+				grid-template-columns: 1fr 1fr;
+			}
+
+			#place_order
+			{
+				justify-self: center;
+				padding: 0 2*$lh;
+			}
+		}
+	}
+}

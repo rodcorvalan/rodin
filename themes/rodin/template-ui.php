@@ -14,6 +14,56 @@ Template Name: UI
 
 <div class="container">
 
+	<div class="rodin-budget__messages">
+		<p class="rodin-budget__messages-item rodin-budget__messages-item--success">Mensaje enviado exitosamente. En breve nos comunicaremos con usted.</p>
+	</div>
+
+	<div class="woocommerce-notices-wrapper">
+		<div class="woocommerce-message" role="alert">
+			<a href="//localhost:3000/rodin/carrito/" tabindex="1" class="button wc-forward">Ver carrito</a> 
+			“Hisopos para detección de ATP en agua AQT200 Clean Trace” se ha añadido a tu carrito.	
+		</div>
+	</div>
+
+	<div class="woocommerce-notices-wrapper">
+		<ul class="woocommerce-error" role="alert">
+			<li>¡El cupón «1231» no existe!</li>
+		</ul>
+	</div>
+
+	<div class="woocommerce-notices-wrapper">
+		<div class="woocommerce-message" role="alert">Carrito actualizado.</div>	
+	</div>
+
+	<ul class="woocommerce-error" role="alert">
+		<li>Por favor, introduce un código de cupón.</li>
+	</ul>
+
+	<div class="woocommerce-NoticeGroup woocommerce-NoticeGroup-checkout">
+		<ul class="woocommerce-error" role="alert">
+			<li>
+				<strong>Facturación Nombre</strong> es un campo requerido.
+			</li>
+			<li>
+				<strong>Facturación Código postal</strong> es un campo requerido.
+			</li>
+		</ul>
+	</div>
+
+	<div class="woocommerce-notices-wrapper">
+		<ul class="woocommerce-error" role="alert">
+			<li>
+				<strong>Error:</strong> Nombre de usuario requerido.
+			</li>
+		</ul>
+	</div>
+
+	<div class="woocommerce-notices-wrapper">
+		<ul class="woocommerce-error" role="alert">
+			<li>Código postal es un campo requerido.</li>
+		</ul>
+	</div>
+
 	<h2 class="ui-title">Buttons</h2>
 
 	<div class="ui-buttons-table">

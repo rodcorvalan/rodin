@@ -1,0 +1,212 @@
+@include osm
+{
+
+	table.shop_table
+	{
+		display: block;
+		font-size: 13px;
+		line-height: .75*$lh;
+		max-width: calc(100vw - 52px);
+		text-align: center;
+
+		p
+		{
+			font-size: inherit;
+		}
+
+		thead
+		{
+			display: none;
+		}
+
+		tbody,
+		tfoot
+		{
+			display: block;
+		}
+
+		tbody tr::before,
+		tbody tr th,
+		tfoot th
+		{
+			background: $catskill-white;
+			border-bottom: 1px solid darken($catskill-white, 10%);
+			display: block;
+			padding: .25*$lh .75*$lh;
+			text-align: center;
+		}
+
+		tr
+		{
+			border: 1px solid darken($catskill-white, 10%);
+			display: flex;
+			flex-direction: column;
+			margin-bottom: .5*$lh;
+		}
+
+		tr:last-child
+		{
+			margin-bottom: 0;
+		}
+
+		td
+		{
+			border-bottom: 1px solid darken($catskill-white, 10%);
+			padding: .5*$lh;
+		}
+
+		td:last-child
+		{
+			border: 0;
+		}
+
+		// Producto
+
+		tbody tr.cart_item::before,
+		tbody tr.order_item::before,
+		tbody tr.rodin-budget__item::before,
+		{
+			content: 'Producto';
+		}
+
+		// Pedido
+		
+		tbody tr.order::before
+		{
+			content: 'Pedido';
+		}
+
+		// Thumbnail
+
+		td.product-thumbnail
+		{
+			display: none;
+		}
+
+		// Remove
+
+		td.product-remove
+		{
+			border-bottom: 0;
+			border-top: 1px solid darken($catskill-white, 10%);
+			order: 100;
+			text-align: center;
+
+			.remove
+			{
+				font-size: 0;
+			}
+
+			.remove::before
+			{
+				content: 'Borrar';
+			}
+		}
+
+		//
+
+		td.actions > *:not(:first-child)
+		{
+			margin-top: .5*$lh;
+		}
+
+		// Shipping Calculator
+
+		.shipping-calculator-button
+		{
+			justify-self: center;
+		}
+
+	}
+
+}
+
+
+@include l
+{
+
+	table.shop_table
+	{
+		font-size: 14px;
+		line-height: .75*$lh;
+
+		td,
+		th
+		{
+			border: 1px solid darken($catskill-white, 10%);
+			padding: .375*$lh .5*$lh;
+			vertical-align: middle;
+		}
+
+		th
+		{
+			background: $catskill-white;
+			font-weight: 700;
+		}
+
+		// Thumbnail
+
+		td.product-thumbnail
+		{
+			height: 2*$lh;
+			width: 2*$lh;
+
+			a,
+			img
+			{
+				display: block;
+				height: inherit;
+				width: inherit;
+			}
+		}
+
+		// Remove
+		
+		td.product-remove
+		{
+			text-align: center;
+
+			a,
+			button
+			{
+				align-items: center;
+				background: $catskill-white;
+				border-radius: 50%;
+				cursor: pointer;
+				display: inline-flex;
+				font-weight: 700;
+				height: 1*$lh;
+				justify-content: center;
+				width: 1*$lh;
+
+				&:hover
+				{
+					background: darken($catskill-white, 10%);
+				}
+			}
+		}
+
+		td.actions
+		{
+			text-align: right;
+		}
+
+		.coupon
+		{
+			float: left;
+		}
+
+		.button[name="update_cart"]
+		{
+			margin-top: .5*$lh;
+			vertical-align: middle;
+		}
+
+		.shipping-calculator-button
+		{
+			justify-self: start;
+		}
+
+	}
+
+}

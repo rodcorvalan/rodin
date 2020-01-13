@@ -1,0 +1,17 @@
+.shop_table .actions .coupon .button,
+.shop_table a.remove::before,
+.shop_table button.remove::before,
+.shop_table a.shipping-calculator-button,
+.woocommerce-form-coupon .button
+{
+	@extend %button--reset;
+	@extend %button;
+	@extend %button--style-three;
+	@extend %button--size-small;
+}
+
+.shop_table .shipping-calculator-form .button
+{
+	@extend %button--size-small;
+	border-radius: 0;
+}

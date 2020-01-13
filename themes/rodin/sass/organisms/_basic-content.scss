@@ -1,0 +1,37 @@
+.basic-content
+{
+	margin: 1*$lh 0;
+
+	&__inner
+	{
+		margin: 0 auto;
+		width: calc(100% - 52px);
+	}
+
+}
+
+@include l
+{
+	.basic-content
+	{
+		margin-bottom: 2*$lh;
+
+		&__inner
+		{
+			width: 960px;
+		}
+
+	}
+}
+
+@include xl
+{
+	.basic-content
+	{
+		&__inner
+		{
+			width: 1280px;
+		}
+
+	}
+}

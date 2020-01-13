@@ -1,0 +1,20 @@
+%table
+{
+	font-size: 13px;
+	line-height: .75*$lh;
+
+	td,
+	th
+	{
+		border: 1px solid darken($catskill-white, 10%);
+		padding: .375*$lh .5*$lh;
+		vertical-align: middle;
+	}
+
+	th
+	{
+		background: $catskill-white;
+		font-weight: 700;
+	}
+
+}

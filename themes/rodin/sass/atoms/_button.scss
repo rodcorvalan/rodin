@@ -1,8 +1,9 @@
 %button--reset
 {
+	box-sizing: border-box;
 	cursor: pointer;
 	display: inline-block;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 %button
@@ -11,13 +12,15 @@
 	border: 2px solid $tawny-port;
 	border-radius: 26px;
 	color: $white;
+	display: inline-block;
 	font-family: $ff1;
 	font-size: 16px;
 	font-weight: 700;
 	height: 1.5*$lh;
 	line-height: 1.5*$lh - 4px;
-	padding: 0 .5*$lh;
+	padding: 0 .75*$lh;
 	text-align: center;
+	white-space: nowrap;
 
 	&:hover:not(:disabled):not(.button--disabled)
 	{
@@ -30,7 +33,7 @@
 	&.button--disabled
 	{
 		cursor: default;
-		opacity: .8;
+		opacity: .5;
 	}
 }
 
@@ -38,6 +41,7 @@
 {
 	background-color: $sea-buckthorn;
 	border-color: $sea-buckthorn;
+	border-radius: 26px;
 
 	&:hover:not(:disabled):not(.button--disabled)
 	{
@@ -49,26 +53,14 @@
 
 %button--style-three
 {
-	align-items: center;
 	background-color: $white;
 	border: 2px solid $tawny-port;
+	border-radius: 0;
 	color: $tawny-port;
-	display: inline-flex;
-	justify-content: center;
-
-	.button__arrow
-	{
-		background-image: url('../images/more.svg');
-		background-size: 100% 100%;
-		display: inline-block;
-		height: 20px;
-		margin-left: 8px;
-		width: 20px;
-	}
 
 	&:hover:not(:disabled):not(.button--disabled)
 	{
-		background-color: $alabaster;
+		background-color: darken($alabaster, 5%);
 	}
 }
 
@@ -76,14 +68,7 @@
 {
 	font-size: 10px;
 	height: 1*$lh;
-	line-height: 1*$lh - 4px;
-
-	.button__arrow
-	{
-		height: 16px;
-		margin-left: 6px;
-		width: 16px;
-	}
+	line-height: 22px;
 }
 
 
@@ -92,13 +77,6 @@
 	font-size: 18px;
 	height: 2*$lh;
 	line-height: 2*$lh - 4px;
-
-	.button__arrow
-	{
-		height: 20px;
-		margin-left: 10px;
-		width: 20px;
-	}
 }
 
 .button
@@ -125,6 +103,7 @@
 	{
 		@extend %button--size-large;
 	}
+
 }
 
 @include osm
@@ -143,4 +122,10 @@
 			width: 16px;
 		}
 	}
+}
+
+.button--type-budget
+{
+	@extend %button--style-three;
+	border-radius: 26px;
 }

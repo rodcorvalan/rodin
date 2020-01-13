@@ -44,9 +44,9 @@ $budget_url = \Rodin_Budget\Helpers::get_add_to_budget_url( $product_id );
 		</div>
 
 		<div class="products-item__buttons">
-			<a href="<?php echo esc_url( $budget_url ); ?>" class="button button--style-three button--size-grow products-item__button">Cotizar</a>
+			<a href="<?php echo esc_url( $budget_url ); ?>" class="button button--type-budget button--size-grow products-item__button">Cotizar</a>
 			<?php if ( ! is_cart() ) : ?>
-			<a href="?add-to-cart=<?php echo esc_attr( $product_id ); ?>" class="button button--size-grow products-item__button">Comprar</a>
+			<a href="<?php echo esc_attr( wc_get_cart_url() ); ?>?add-to-cart=<?php echo esc_attr( $product_id ); ?>" class="button button--size-grow products-item__button">Comprar</a>
 			<?php else : ?>
 			<a href="<?php esc_url( get_the_permalink( $product_id ) ); ?>" class="button button--size-grow products-item__button">Ver Más</a>
 			<?php endif; ?>

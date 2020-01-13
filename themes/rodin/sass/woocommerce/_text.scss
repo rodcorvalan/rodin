@@ -1,0 +1,63 @@
+.woocommerce
+{
+	h2,
+	h3,
+	#payment::before
+	{
+		font-size: 18px;
+		font-weight: 700;
+
+		@include l
+		{
+			font-size: 20px;
+		}
+	}
+
+	fieldset legend
+	{
+		display: block;
+		font-size: 16px;
+		font-weight: 700;
+		margin-bottom: .5*$lh;
+	}
+
+	p
+	{
+		font-size: 14px;
+	}
+
+	p a
+	{
+		text-decoration: underline;
+	}
+
+	address,
+	.woocommerce-order-overview
+	{
+		background: $catskill-white;
+		display: block;
+		font-size: 12px;
+		line-height: 1*$lh;
+		padding: .5*$lh;
+
+		p
+		{
+			font-size: inherit;
+			line-height: inherit;
+		}
+	}
+
+	.woocommerce-Address-title
+	{
+		display: flex;
+		justify-content: space-between;
+
+		a.edit
+		{
+			@extend .button;
+			@extend .button--style-three;
+			@extend .button--size-small;
+			margin-left: 10px;
+		}
+	}
+}

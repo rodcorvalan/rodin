@@ -1,0 +1,170 @@
+// Woocommerce Global
+
+.woocommerce
+{
+	display: grid;
+	grid-column-gap: 1*$lh;
+	grid-row-gap: .75*$lh;
+
+	.screen-reader-text,
+	div:empty,
+	span:empty
+	{
+		display: none;
+	}
+
+	@include l
+	{
+		grid-row-gap: 1*$lh;
+	}
+}
+
+// 
+// Default LARGE Row Gap
+// 
+
+.woocommerce
+{
+	#customer_login,
+	.woocommerce-MyAccount-content,
+	.woocommerce-Addresses
+	.woocommerce-MyAccount-content,
+	.woocommerce-order-details,
+	.woocommerce-customer-details,
+	#order_review,
+	#payment,
+	#payment .form-row,
+	.woocommerce-Addresses,
+	.woocommerce-Address,
+	.woocommerce-MyAccount-content,
+	.woocommerce-MyAccount-content form,
+	.woocommerce-address-fields,
+	.cart_totals,
+	.woocommerce-columns--addresses,
+	.woocommerce-column--billing-address,
+	.woocommerce-column--shipping-address,
+	.woocommerce-billing-fields,
+	.woocommerce-billing-fields__field-wrapper,
+	#customer_details,
+	.woocommerce-shipping-fields,
+	.woocommerce-shipping-fields__field-wrapper,
+	form.woocommerce-checkout,
+	.woocommerce-additional-fields,
+	.woocommerce-additional-fields__field-wrapper,
+	#customer_details .col-2,
+	.woocommerce-order
+	{
+		align-items: start;
+		display: grid;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: .75*$lh;
+
+		@include l
+		{
+			grid-row-gap: 1*$lh;
+		}
+
+	}
+}
+
+// 
+// Default SMALL Row Gap
+// 
+
+.woocommerce
+{
+	.woocommerce-address-fields__field-wrapper,
+	fieldset,
+	.woocommerce-shipping-calculator,
+	{
+		display: grid;
+		grid-column-gap: 1*$lh;
+		grid-row-gap: .5*$lh;
+	}
+}
+
+// Custom
+
+.woocommerce #customer_login,
+.woocommerce .woocommerce-Addresses,
+.woocommerce .woocommerce-columns--addresses
+{
+	@include m
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+.woocommerce
+{
+	#billing_address_2_field,
+	#shipping_address_2_field
+	{
+		align-self: end;
+	}
+
+	.woocommerce-address-fields__field-wrapper,
+	.woocommerce-billing-fields__field-wrapper,
+	.woocommerce-shipping-fields__field-wrapper
+	{
+		@include m
+		{
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include l
+		{
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+}
+
+.woocommerce
+{
+	.woocommerce-EditAccountForm
+	{
+		@include m
+		{
+			grid-template-columns: 1fr 1fr;
+
+			fieldset
+			{
+				grid-column: 1/-1;
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+	}
+}
+
+.woocommerce .woocommerce-shipping-totals.shipping td > *:not(:first-child),
+.woocommerce .shipping-calculator-form p:not(:first-child),
+{
+	margin-top: .5*$lh;
+}
+
+.wc-proceed-to-checkout
+{
+	text-align: center;
+}
+
+
+@include l
+{
+	.woocommerce-checkout .woocommerce
+	{
+		grid-template-columns: 1fr 1fr;
+
+		.woocommerce-notices-wrapper,
+		.woocommerce-checkout,
+		.woocommerce-order
+		{
+			grid-column: 1/-1;
+		}
+
+		.woocommerce-form-coupon-toggle,
+		.woocommerce-form-coupon
+		{
+			grid-column: 1/2;
+		}
+	}
+}
